@@ -18,7 +18,7 @@
     <div class="container">
         <h1>Knowledge Base</h1>
         <ul class="language-list">
-            <li><a href="https://drive.google.com/drive/folders/1LNY6Nlw1NWIybGUbjOQpRhEGye7TnBmJ">0. Manuali</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1RNFv2ed42pom3PvbazfmNs-cdlTv9mpZ">0. Manuali</a></li>
             <li><a href="https://drive.google.com/drive/folders/1RNFv2ed42pom3PvbazfmNs-cdlTv9mpZ/Cinese">Cinese</a></li>
             <li><a href="https://drive.google.com/drive/folders/1RNFv2ed42pom3PvbazfmNs-cdlTv9mpZ/Francese">Francese</a></li>
             <li><a href="https://drive.google.com/drive/folders/1RNFv2ed42pom3PvbazfmNs-cdlTv9mpZ/Giapponese">Giapponese</a></li>
