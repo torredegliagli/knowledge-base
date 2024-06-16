@@ -60,6 +60,14 @@
                 window.location.href = value + "/index.html";
             }
         }
+
+        function redirectToHouseRules(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/house-rules.html";
+            }
+        }
     </script>
 </body>
 </html>
