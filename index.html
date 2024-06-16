@@ -57,11 +57,7 @@
             var select = document.getElementById(selectId);
             var value = select.value;
             if (value) {
-                if (selectId === 'documentationSelect') {
-                    window.location.href = value + "/index.html";
-                } else if (selectId === 'houseRulesSelect') {
-                    window.location.href = value + "/house-rules.html";
-                }
+                window.location.href = value + "/index.html";
             }
         }
     </script>
