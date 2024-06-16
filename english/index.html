@@ -3,63 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
+    <title>English Documentation</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; margin-bottom: 20px; }
         h1 { text-align: center; }
-        .dropdown { margin: 10px 0; }
-        .dropdown select { width: 100%; padding: 10px; font-size: 18px; }
+        .file-list { list-style: none; padding: 0; }
+        .file-list li { margin: 10px 0; }
+        .file-list a { text-decoration: none; color: #0073e6; font-size: 16px; }
+        .file-list a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Documentation</h1>
-        <div class="dropdown">
-            <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
-                <option value="">Select Language</option>
-                <option value="english">English (Documentation)</option>
-                <option value="italian">Italian (Documentazione)</option>
-                <option value="french">French (Documentation)</option>
-                <option value="german">German (Dokumentation)</option>
-                <option value="spanish">Spanish (Documentación)</option>
-                <option value="arabic">Arabic (التوثيق)</option>
-                <option value="chinese">Chinese (中文)</option>
-                <option value="japanese">Japanese (ドキュメント)</option>
-                <option value="russian">Russian (Документация)</option>
-                <option value="portuguese">Portuguese (Documentação)</option>
-                <option value="manuali">Installation Manuals</option>
-            </select>
-        </div>
+        <h1>English Documentation</h1>
+        <ul class="file-list">
+            <li><a href="file1.pdf">File 1</a></li>
+            <li><a href="file2.pdf">File 2</a></li>
+            <!-- Add more files as needed -->
+        </ul>
+        <p><a href="https://torredegliagli.github.io/knowledge-base/">Back to Documentation</a></p>
     </div>
-
-    <div class="container">
-        <h1>House Rules</h1>
-        <div class="dropdown">
-            <select id="houseRulesSelect" onchange="redirectToFolder('houseRulesSelect')">
-                <option value="">Select Language</option>
-                <option value="english">English (House Rules)</option>
-                <option value="italian">Italian (Regole della Casa)</option>
-                <option value="french">French (Règles de la Maison)</option>
-                <option value="german">German (Hausordnung)</option>
-                <option value="spanish">Spanish (Reglas de la Casa)</option>
-                <option value="arabic">Arabic (قواعد المنزل)</option>
-                <option value="chinese">Chinese (房屋规则)</option>
-                <option value="japanese">Japanese (ハウスルール)</option>
-                <option value="russian">Russian (Правила дома)</option>
-                <option value="portuguese">Portuguese (Regras da Casa)</option>
-            </select>
-        </div>
-    </div>
-
-    <script>
-        function redirectToFolder(selectId) {
-            var select = document.getElementById(selectId);
-            var value = select.value;
-            if (value) {
-                window.location.href = value + "/index.html";
-            }
-        }
-    </script>
 </body>
 </html>
