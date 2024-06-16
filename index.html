@@ -8,171 +8,57 @@
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; margin-bottom: 20px; }
         h1 { text-align: center; }
-        .tab { overflow: hidden; border-bottom: 1px solid #ccc; }
-        .tab button { background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; font-size: 18px; }
-        .tab button:hover { background-color: #ddd; }
-        .tab button.active { background-color: #ccc; }
-        .tabcontent { display: none; padding: 6px 12px; border-top: none; }
-        .file-list { list-style: none; padding: 0; }
-        .file-list li { margin: 10px 0; }
-        .file-list a { text-decoration: none; color: #0073e6; font-size: 16px; }
-        .file-list a:hover { text-decoration: underline; }
+        .dropdown { margin: 10px 0; }
+        .dropdown select { width: 100%; padding: 10px; font-size: 18px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Documentation</h1>
-        <div class="tab">
-            <button class="tablinks" onclick="openLanguage(event, 'english-docs')">English</button>
-            <button class="tablinks" onclick="openLanguage(event, 'italian-docs')">Italian</button>
-            <button class="tablinks" onclick="openLanguage(event, 'french-docs')">French</button>
-            <button class="tablinks" onclick="openLanguage(event, 'german-docs')">German</button>
-            <button class="tablinks" onclick="openLanguage(event, 'spanish-docs')">Spanish</button>
-            <button class="tablinks" onclick="openLanguage(event, 'arabic-docs')">Arabic</button>
-            <button class="tablinks" onclick="openLanguage(event, 'chinese-docs')">Chinese</button>
-            <button class="tablinks" onclick="openLanguage(event, 'japanese-docs')">Japanese</button>
-            <button class="tablinks" onclick="openLanguage(event, 'russian-docs')">Russian</button>
-            <button class="tablinks" onclick="openLanguage(event, 'portuguese-docs')">Portuguese</button>
-            <button class="tablinks" onclick="openLanguage(event, 'manuali-docs')">Installation Manuals</button>
-        </div>
-
-        <div id="english-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="english/index.html">English (Documentation)</a></li>
-            </ul>
-        </div>
-        <div id="italian-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="italian/index.html">Italian (Documentazione)</a></li>
-            </ul>
-        </div>
-        <div id="french-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="french/index.html">French (Documentation)</a></li>
-            </ul>
-        </div>
-        <div id="german-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="german/index.html">German (Dokumentation)</a></li>
-            </ul>
-        </div>
-        <div id="spanish-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="spanish/index.html">Spanish (Documentación)</a></li>
-            </ul>
-        </div>
-        <div id="arabic-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="arabic/index.html">Arabic (التوثيق)</a></li>
-            </ul>
-        </div>
-        <div id="chinese-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="chinese/index.html">Chinese (中文)</a></li>
-            </ul>
-        </div>
-        <div id="japanese-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="japanese/index.html">Japanese (ドキュメント)</a></li>
-            </ul>
-        </div>
-        <div id="russian-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="russian/index.html">Russian (Документация)</a></li>
-            </ul>
-        </div>
-        <div id="portuguese-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="portuguese/index.html">Portuguese (Documentação)</a></li>
-            </ul>
-        </div>
-        <div id="manuali-docs" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="manuali/index.html">Installation Manuals</a></li>
-            </ul>
+        <div class="dropdown">
+            <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
+                <option value="">Select Language</option>
+                <option value="english">English (Documentation)</option>
+                <option value="italian">Italian (Documentazione)</option>
+                <option value="french">French (Documentation)</option>
+                <option value="german">German (Dokumentation)</option>
+                <option value="spanish">Spanish (Documentación)</option>
+                <option value="arabic">Arabic (التوثيق)</option>
+                <option value="chinese">Chinese (中文)</option>
+                <option value="japanese">Japanese (ドキュメント)</option>
+                <option value="russian">Russian (Документация)</option>
+                <option value="portuguese">Portuguese (Documentação)</option>
+                <option value="manuali">Installation Manuals</option>
+            </select>
         </div>
     </div>
 
     <div class="container">
         <h1>House Rules</h1>
-        <div class="tab">
-            <button class="tablinks" onclick="openLanguage(event, 'english-rules')">English</button>
-            <button class="tablinks" onclick="openLanguage(event, 'italian-rules')">Italian</button>
-            <button class="tablinks" onclick="openLanguage(event, 'french-rules')">French</button>
-            <button class="tablinks" onclick="openLanguage(event, 'german-rules')">German</button>
-            <button class="tablinks" onclick="openLanguage(event, 'spanish-rules')">Spanish</button>
-            <button class="tablinks" onclick="openLanguage(event, 'arabic-rules')">Arabic</button>
-            <button class="tablinks" onclick="openLanguage(event, 'chinese-rules')">Chinese</button>
-            <button class="tablinks" onclick="openLanguage(event, 'japanese-rules')">Japanese</button>
-            <button class="tablinks" onclick="openLanguage(event, 'russian-rules')">Russian</button>
-            <button class="tablinks" onclick="openLanguage(event, 'portuguese-rules')">Portuguese</button>
-        </div>
-
-        <div id="english-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="english/house-rules.html">English (House Rules)</a></li>
-            </ul>
-        </div>
-        <div id="italian-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="italian/house-rules.html">Italian (Regole della Casa)</a></li>
-            </ul>
-        </div>
-        <div id="french-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="french/house-rules.html">French (Règles de la Maison)</a></li>
-            </ul>
-        </div>
-        <div id="german-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="german/house-rules.html">German (Hausordnung)</a></li>
-            </ul>
-        </div>
-        <div id="spanish-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="spanish/house-rules.html">Spanish (Reglas de la Casa)</a></li>
-            </ul>
-        </div>
-        <div id="arabic-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="arabic/house-rules.html">Arabic (قواعد المنزل)</a></li>
-            </ul>
-        </div>
-        <div id="chinese-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="chinese/house-rules.html">Chinese (房屋规则)</a></li>
-            </ul>
-        </div>
-        <div id="japanese-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="japanese/house-rules.html">Japanese (ハウスルール)</a></li>
-            </ul>
-        </div>
-        <div id="russian-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="russian/house-rules.html">Russian (Правила дома)</a></li>
-            </ul>
-        </div>
-        <div id="portuguese-rules" class="tabcontent">
-            <ul class="file-list">
-                <li><a href="portuguese/house-rules.html">Portuguese (Regras da Casa)</a></li>
-            </ul>
+        <div class="dropdown">
+            <select id="houseRulesSelect" onchange="redirectToFolder('houseRulesSelect')">
+                <option value="">Select Language</option>
+                <option value="english">English (House Rules)</option>
+                <option value="italian">Italian (Regole della Casa)</option>
+                <option value="french">French (Règles de la Maison)</option>
+                <option value="german">German (Hausordnung)</option>
+                <option value="spanish">Spanish (Reglas de la Casa)</option>
+                <option value="arabic">Arabic (قواعد المنزل)</option>
+                <option value="chinese">Chinese (房屋规则)</option>
+                <option value="japanese">Japanese (ハウスルール)</option>
+                <option value="russian">Russian (Правила дома)</option>
+                <option value="portuguese">Portuguese (Regras da Casa)</option>
+            </select>
         </div>
     </div>
 
     <script>
-        function openLanguage(evt, languageName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
             }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(languageName).style.display = "block";
-            evt.currentTarget.className += " active";
         }
     </script>
 </body>
