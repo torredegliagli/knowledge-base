@@ -3,27 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Base</title>
+    <title>Documentation</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; margin-bottom: 20px; }
         h1 { text-align: center; }
-        .pdf-list { list-style: none; padding: 0; }
-        .pdf-list li { margin: 10px 0; }
-        .pdf-list a { text-decoration: none; color: #0073e6; font-size: 18px; }
-        .pdf-list a:hover { text-decoration: underline; }
+        .dropdown { margin: 10px 0; }
+        .dropdown select { width: 100%; padding: 10px; font-size: 18px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Documentation</h1>
-        <ul class="pdf-list">
-            <li><a href="x">PDF 1</a></li>
-            <li><a href="x">PDF 2</a></li>
-            <li><a href="x">PDF 3</a></li>
-            <!-- Add more PDFs as needed -->
-        </ul>
-        <p><a href="../index.html">Back to Documentation</a></p>
+        <div class="dropdown">
+            <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
+                <option value="">Select Language</option>
+                <option value="english-docs">English (Documentation)</option>
+                <option value="italian-docs">Italian (Documentazione)</option>
+                <option value="french-docs">French (Documentation)</option>
+                <option value="german-docs">German (Dokumentation)</option>
+                <option value="spanish-docs">Spanish (Documentación)</option>
+                <option value="arabic-docs">Arabic (التوثيق)</option>
+                <option value="chinese-docs">Chinese (中文)</option>
+                <option value="japanese-docs">Japanese (ドキュメント)</option>
+                <option value="russian-docs">Russian (Документация)</option>
+                <option value="portuguese-docs">Portuguese (Documentação)</option>
+                <option value="manuali-docs">Installation Manuals</option>
+            </select>
+        </div>
     </div>
+
+    <div class="container">
+        <h1>House Rules</h1>
+        <div class="dropdown">
+            <select id="houseRulesSelect" onchange="redirectToHouseRules('houseRulesSelect')">
+                <option value="">Select Language</option>
+                <option value="english">English (House Rules)</option>
+                <option value="italian">Italian (Regole della Casa)</option>
+                <option value="french">French (Règles de la Maison)</option>
+                <option value="german">German (Hausordnung)</option>
+                <option value="spanish">Spanish (Reglas de la Casa)</option>
+                <option value="arabic">Arabic (قواعد المنزل)</option>
+                <option value="chinese">Chinese (房屋规则)</option>
+                <option value="japanese">Japanese (ハウスルール)</option>
+                <option value="russian">Russian (Правила дома)</option>
+                <option value="portuguese">Portuguese (Regras da Casa)</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+
+        function redirectToHouseRules(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/house-rules.html";
+            }
+        }
+    </script>
 </body>
 </html>
