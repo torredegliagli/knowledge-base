@@ -8,44 +8,119 @@
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; margin-bottom: 20px; }
         h1 { text-align: center; }
-        .language-list { list-style: none; padding: 0; }
-        .language-list li { margin: 10px 0; }
-        .language-list a { text-decoration: none; color: #0073e6; font-size: 18px; }
-        .language-list a:hover { text-decoration: underline; }
+        .dropdown { margin: 10px 0; }
+        .dropdown select { width: 100%; padding: 10px; font-size: 18px; }
+        .file-list { list-style: none; padding: 0; display: none; }
+        .file-list li { margin: 10px 0; }
+        .file-list a { text-decoration: none; color: #0073e6; font-size: 16px; }
+        .file-list a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Documentation</h1>
-        <ul class="language-list">
-            <li><a href="english/index.html">English (Documentation)</a></li>
-            <li><a href="italian/index.html">Italian (Documentazione)</a></li>
-            <li><a href="french/index.html">French (Documentation)</a></li>
-            <li><a href="german/index.html">German (Dokumentation)</a></li>
-            <li><a href="spanish/index.html">Spanish (Documentación)</a></li>
-            <li><a href="arabic/index.html">Arabic (التوثيق)</a></li>
-            <li><a href="chinese/index.html">Chinese (中文)</a></li>
-            <li><a href="japanese/index.html">Japanese (ドキュメント)</a></li>
-            <li><a href="russian/index.html">Russian (Документация)</a></li>
-            <li><a href="portuguese/index.html">Portuguese (Documentação)</a></li>
-            <li><a href="manuali/index.html">Installation Manuals</a></li>
-        </ul>
+        <div class="dropdown">
+            <select id="documentationSelect" onchange="showFiles('documentationSelect')">
+                <option value="">Select Language</option>
+                <option value="english-docs">English (Documentation)</option>
+                <option value="italian-docs">Italian (Documentazione)</option>
+                <option value="french-docs">French (Documentation)</option>
+                <option value="german-docs">German (Dokumentation)</option>
+                <option value="spanish-docs">Spanish (Documentación)</option>
+                <option value="arabic-docs">Arabic (التوثيق)</option>
+                <option value="chinese-docs">Chinese (中文)</option>
+                <option value="japanese-docs">Japanese (ドキュメント)</option>
+                <option value="russian-docs">Russian (Документация)</option>
+                <option value="portuguese-docs">Portuguese (Documentação)</option>
+                <option value="manuali-docs">Installation Manuals</option>
+            </select>
+        </div>
+
+        <div id="english-docs" class="file-list">
+            <ul>
+                <li><a href="english/index.html">English (Documentation)</a></li>
+            </ul>
+        </div>
+        <div id="italian-docs" class="file-list">
+            <ul>
+                <li><a href="italian/index.html">Italian (Documentazione)</a></li>
+            </ul>
+        </div>
+        <div id="french-docs" class="file-list">
+            <ul>
+                <li><a href="french/index.html">French (Documentation)</a></li>
+            </ul>
+        </div>
+        <div id="german-docs" class="file-list">
+            <ul>
+                <li><a href="german/index.html">German (Dokumentation)</a></li>
+            </ul>
+        </div>
+        <div id="spanish-docs" class="file-list">
+            <ul>
+                <li><a href="spanish/index.html">Spanish (Documentación)</a></li>
+            </ul>
+        </div>
+        <div id="arabic-docs" class="file-list">
+            <ul>
+                <li><a href="arabic/index.html">Arabic (التوثيق)</a></li>
+            </ul>
+        </div>
+        <div id="chinese-docs" class="file-list">
+            <ul>
+                <li><a href="chinese/index.html">Chinese (中文)</a></li>
+            </ul>
+        </div>
+        <div id="japanese-docs" class="file-list">
+            <ul>
+                <li><a href="japanese/index.html">Japanese (ドキュメント)</a></li>
+            </ul>
+        </div>
+        <div id="russian-docs" class="file-list">
+            <ul>
+                <li><a href="russian/index.html">Russian (Документация)</a></li>
+            </ul>
+        </div>
+        <div id="portuguese-docs" class="file-list">
+            <ul>
+                <li><a href="portuguese/index.html">Portuguese (Documentação)</a></li>
+            </ul>
+        </div>
+        <div id="manuali-docs" class="file-list">
+            <ul>
+                <li><a href="manuali/index.html">Installation Manuals</a></li>
+            </ul>
+        </div>
     </div>
 
     <div class="container">
         <h1>House Rules</h1>
-        <ul class="language-list">
-            <li><a href="english/house-rules.html">English (House Rules)</a></li>
-            <li><a href="italian/house-rules.html">Italian (Regole della Casa)</a></li>
-            <li><a href="french/house-rules.html">French (Règles de la Maison)</a></li>
-            <li><a href="german/house-rules.html">German (Hausordnung)</a></li>
-            <li><a href="spanish/house-rules.html">Spanish (Reglas de la Casa)</a></li>
-            <li><a href="arabic/house-rules.html">Arabic (قواعد المنزل)</a></li>
-            <li><a href="chinese/house-rules.html">Chinese (房屋规则)</a></li>
-            <li><a href="japanese/house-rules.html">Japanese (ハウスルール)</a></li>
-            <li><a href="russian/house-rules.html">Russian (Правила дома)</a></li>
-            <li><a href="portuguese/house-rules.html">Portuguese (Regras da Casa)</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+        <div class="dropdown">
+            <select id="houseRulesSelect" onchange="showFiles('houseRulesSelect')">
+                <option value="">Select Language</option>
+                <option value="english-rules">English (House Rules)</option>
+                <option value="italian-rules">Italian (Regole della Casa)</option>
+                <option value="french-rules">French (Règles de la Maison)</option>
+                <option value="german-rules">German (Hausordnung)</option>
+                <option value="spanish-rules">Spanish (Reglas de la Casa)</option>
+                <option value="arabic-rules">Arabic (قواعد المنزل)</option>
+                <option value="chinese-rules">Chinese (房屋规则)</option>
+                <option value="japanese-rules">Japanese (ハウスルール)</option>
+                <option value="russian-rules">Russian (Правила дома)</option>
+                <option value="portuguese-rules">Portuguese (Regras da Casa)</option>
+            </select>
+        </div>
+
+        <div id="english-rules" class="file-list">
+            <ul>
+                <li><a href="english/house-rules.html">English (House Rules)</a></li>
+            </ul>
+        </div>
+        <div id="italian-rules" class="file-list">
+            <ul>
+                <li><a href="italian/house-rules.html">Italian (Regole della Casa)</a></li>
+            </ul>
+        </div>
+        <div id="french-rules" class="file-list">
+            <ul>
+                <li><a
