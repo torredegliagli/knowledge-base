@@ -51,21 +51,17 @@
             </select>
         </div>
     </div>
-
+    
     <script>
         function redirectToFolder(selectId) {
             var select = document.getElementById(selectId);
             var value = select.value;
             if (value) {
-                window.location.href = value + "/index.html";
-            }
-        }
-
-        function redirectToHouseRules(selectId) {
-            var select = document.getElementById(selectId);
-            var value = select.value;
-            if (value) {
-                window.location.href = value + "/house-rules.html";
+                if (selectId === 'documentationSelect') {
+                    window.location.href = value + "/index.html";
+                } else if (selectId === 'houseRulesSelect') {
+                    window.location.href = value + "/house-rules.html";
+                }
             }
         }
     </script>
