@@ -8,15 +8,16 @@
         body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h1 { text-align: center; color: #444; }
-        ul { list-style: none; padding: 0; }
+        ul.top-level { list-style: none; padding: 0; }
+        ul.nested { list-style: disc; padding-left: 20px; }
         li { margin: 10px 0; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Regole della casa</h1>
+        <h1>Regole della Casa</h1>
         
-        <ul>
+        <ul class="top-level">
             <li><strong>Check-in:</strong> dopo le 15:00</li>
             <li><strong>Check-out:</strong> entro le 10:00</li>
             <li><strong>Vietato fumare:</strong> non fumare all'interno dell'appartamento.</li>
@@ -33,7 +34,7 @@
             <li><strong>Uso del bagno:</strong> mantieni il bagno pulito. Getta solo carta igienica nel water e segnala immediatamente eventuali problemi idraulici.</li>
             <li><strong>Uso della lavatrice:</strong> segui le istruzioni per l'uso della lavatrice. Non sovraccaricarla e rimuovi il bucato prontamente per evitare la creazione di muffe.</li>
             <li><strong>Contatti di emergenza:</strong>
-                <ul>
+                <ul class="nested">
                     <li><strong>Polizia:</strong> 112</li>
                     <li><strong>Ambulanza:</strong> 118</li>
                     <li><strong>Vigili del fuoco:</strong> 115</li>
