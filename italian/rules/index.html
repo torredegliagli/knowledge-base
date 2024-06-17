@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regole della casa</title>
+    <title>Regole della Casa</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -11,11 +11,26 @@
         ul.top-level { list-style: none; padding: 0; }
         ul.nested { list-style: disc; padding-left: 20px; }
         li { margin: 10px 0; }
+        .button-container { text-align: center; margin-top: 20px; }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Regole della casa</h1>
+        <h1>Regole della Casa</h1>
         
         <ul class="top-level">
             <li><strong>Check-in:</strong> dopo le 15:00</li>
@@ -47,6 +62,10 @@
             <li><strong>Rispetto per la proprietà:</strong> tratta l'appartamento e il suo contenuto con rispetto.</li>
             <li><strong>Oggetti smarriti e ritrovati:</strong> contattaci immediatamente se trovi o perdi oggetti personali.</li>
         </ul>
+
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base" class="button">Go to Knowledge Base</a>
+        </div>
     </div>
 </body>
 </html>
