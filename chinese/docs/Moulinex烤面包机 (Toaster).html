@@ -8,23 +8,39 @@
         body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; padding: 20px; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h1 { text-align: center; color: #444; }
-        ul { list-style: none; padding: 0; }
+        ul.top-level { list-style: none; padding: 0; }
+        ul.nested { list-style: disc; padding-left: 20px; }
         li { margin: 10px 0; }
+        .button-container { text-align: center; margin-top: 20px; }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Moulinex烤面包机使用说明</h1>
         
-        <ul>
+        <ul class="top-level">
             <li><strong>1. 设置烤面包机</strong>
-                <ul>
+                <ul class="nested">
                     <li>将烤面包机放在平坦、稳定、耐热的表面上，远离窗帘或架子等易燃材料。</li>
                     <li>确保面包屑托盘安装正确。</li>
                 </ul>
             </li>
             <li><strong>2. 操作烤面包机</strong>
-                <ul>
+                <ul class="nested">
                     <li>插电: 将烤面包机插入接地插座。</li>
                     <li>放入面包: 将面包片放入插槽。</li>
                     <li>选择烤色等级: 使用控制旋钮选择烤色等级。</li>
@@ -33,14 +49,14 @@
                 </ul>
             </li>
             <li><strong>3. 功能</strong>
-                <ul>
+                <ul class="nested">
                     <li>解冻功能: 按下指定按钮启动解冻功能，然后开始烘烤过程。</li>
                     <li>再加热功能: 按下指定按钮启动再加热功能，烤面包机将加热面包而不会进一步烘烤。</li>
                     <li>高举杠杆: 使用高举杠杆安全地取出较小的面包片。</li>
                 </ul>
             </li>
             <li><strong>4. 使用后</strong>
-                <ul>
+                <ul class="nested">
                     <li>烤面包机在烘烤完成后会自动弹出面包。</li>
                     <li>在不使用时和清洁前，拔下烤面包机的插头。</li>
                     <li>让烤面包机冷却后再取出和清洁面包屑托盘。</li>
@@ -48,12 +64,12 @@
                 </ul>
             </li>
             <li><strong>5. 清洁和维护</strong>
-                <ul>
+                <ul class="nested">
                     <li>用软布清洁烤面包机。避免使用磨蚀性清洁剂、擦洗垫或金属器具。</li>
                 </ul>
             </li>
             <li><strong>6. 安全注意事项</strong>
-                <ul>
+                <ul class="nested">
                     <li>使用时监督烤面包机。</li>
                     <li>不要将超大食物、金属器具或锡纸包放入插槽，以免触电或火灾。</li>
                     <li>使用期间及刚使用后避免触摸金属部件或热表面。</li>
@@ -61,12 +77,16 @@
                 </ul>
             </li>
             <li><strong>7. 故障排除</strong>
-                <ul>
+                <ul class="nested">
                     <li>如果面包不弹出或烤面包机不加热，确保其正确插电并且杠杆完全按下。</li>
                     <li>如有异常或烤面包机无法正常工作，请拔下插头并联系制造商。</li>
                 </ul>
             </li>
         </ul>
+
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base" class="button">Go to Knowledge Base</a>
+        </div>
     </div>
 </body>
 </html>
