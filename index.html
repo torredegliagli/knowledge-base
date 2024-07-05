@@ -14,6 +14,25 @@
 </head>
 <body>
     <div class="container">
+        <h1>Check-In information</h1>
+        <div class="dropdown">
+            <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
+                <option value="">Select Language</option>
+                <option value="english/docs">English (Documentation)</option>
+                <option value="italian/docs">Italian (Documentazione)</option>
+                <option value="french/docs">French (Documentation)</option>
+                <option value="german/docs">German (Dokumentation)</option>
+                <option value="spanish/docs">Spanish (Documentación)</option>
+                <option value="arabic/docs">Arabic (التوثيق)</option>
+                <option value="chinese/docs">Chinese (中文)</option>
+                <option value="japanese/docs">Japanese (ドキュメント)</option>
+                <option value="russian/docs">Russian (Документация)</option>
+                <option value="portuguese/docs">Portuguese (Documentação)</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="container">
         <h1>Documentation</h1>
         <div class="dropdown">
             <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
