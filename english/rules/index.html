@@ -20,22 +20,40 @@
             padding: 20px; 
             background: white; 
             border-radius: 8px; 
-            margin-bottom: 20px; }
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
         h1 { 
             text-align: center; 
+            color: #444; 
         }
-        .file-list { 
-            list-style: none; padding: 0; 
+        ul { 
+            list-style: none; 
+            padding: 0; 
         }
-        .file-list li { 
+        li { 
             margin: 10px 0; 
-                      }
-        .file-list a { 
-            text-decoration: none; color: #0073e6; font-size: 16px; 
-                     }
-        .file-list a:hover { 
-            text-decoration: underline; 
-                           }
+        }
+        .note { 
+            color: red; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
     </style>
 </head>
 <body>
