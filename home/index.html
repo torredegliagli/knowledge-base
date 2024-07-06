@@ -72,7 +72,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Check-in information</h1>
+        <h1>Check-in info</h1>
         <div class="dropdown">
             <select id="checkinSelect" onchange="redirectToFolder('checkinSelect')">
                 <option value="">Select Language</option>
@@ -89,7 +89,27 @@
             </select>
         </div>
     </div>
-    
+
+
+    <div class="container">
+        <h1>House Rules</h1>
+        <div class="dropdown">
+            <select id="houseRulesSelect" onchange="redirectToFolder('houseRulesSelect')">
+                <option value="">Select Language</option>
+                <option value="house rules/english">English</option>
+                <option value="house rules/italian">Italian</option>
+                <!-- <option value="french/rules">French</option> -->
+                <!-- <option value="german/rules">German</option> -->
+                <!-- <option value="spanish/rules">Spanish</option> -->
+                <!-- <option value="arabic/rules">Arabic</option> -->
+                <!-- <option value="chinese/rules">Chinese</option> -->
+                <!-- <option value="japanese/rules">Japanese</option> -->
+                <!-- <option value="russian/rules">Russian</option> -->
+                <!-- <option value="portuguese/rules">Portuguese</option> -->
+            </select>
+        </div>            
+    </div>
+        
     <div class="container">
         <h1>Documentation</h1>
         <div class="dropdown">
@@ -110,23 +130,24 @@
         </div>
     </div>
 
+        
     <div class="container">
-        <h1>House Rules</h1>
+        <h1>Recommendation</h1>
         <div class="dropdown">
-            <select id="houseRulesSelect" onchange="redirectToFolder('houseRulesSelect')">
+            <select id="recommendationSelect" onchange="redirectToFolder('recommendationSelect')">
                 <option value="">Select Language</option>
-                <option value="house rules/english">English</option>
-                <option value="house rules/italian">Italian</option>
-                <!-- <option value="french/rules">French</option> -->
-                <!-- <option value="german/rules">German</option> -->
-                <!-- <option value="spanish/rules">Spanish</option> -->
-                <!-- <option value="arabic/rules">Arabic</option> -->
-                <!-- <option value="chinese/rules">Chinese</option> -->
-                <!-- <option value="japanese/rules">Japanese</option> -->
-                <!-- <option value="russian/rules">Russian</option> -->
-                <!-- <option value="portuguese/rules">Portuguese</option> -->
+                <option value="recommendation/english">English</option>
+                <option value="recommendation/italian">Italian</option>
+                <!-- <option value="french/docs">French</option> -->
+                <!-- <option value="german/docs">German</option> -->
+                <!-- <option value="spanish/docs">Spanish</option> -->
+                <!-- <option value="arabic/docs">Arabic</option> -->
+                <!-- <option value="chinese/docs">Chinese</option> -->
+                <!-- <option value="japanese/docs">Japanese</option> -->
+                <!-- <option value="russian/docs">Russian</option> -->
+                <!-- <option value="portuguese/docs">Portuguese</option> -->
             </select>
-        </div>            
+        </div>
     </div>
     
     <div class="button-container">
