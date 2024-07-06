@@ -22,33 +22,24 @@
             height: 100vh;
             margin: 0;
         }
-        .container { 
-            max-width: 800px; 
-            padding: 20px; 
-            background: rgba(255, 255, 255, 0.9); 
-            border-radius: 8px; 
-            margin-bottom: 20px; 
-            text-align: center;
-        }
-        h1 { 
-            text-align: center; 
-        }
         .welcome-text {
             font-family: 'Dancing Script', cursive;
-            font-size: 3em;
+            font-size: 4em; /* increased size */
             color: purple;
             text-align: center;
+            margin-bottom: 10px; /* slight margin */
         }
         .subtext {
             font-family: 'Dancing Script', cursive;
-            font-size: 2em;
+            font-size: 3em; /* increased size */
             color: purple;
             text-align: center;
+            margin-bottom: 40px; /* slight margin */
         }
         .button-container { 
             text-align: center; 
             position: absolute; 
-            bottom: 20px; 
+            bottom: 60px; /* positioned slightly higher */
             left: 50%; 
             transform: translateX(-50%);
         }
@@ -71,16 +62,14 @@
                 background-size: auto;
                 background-position: center;
             }
-            .container {
-                padding: 15px;
-                box-shadow: none;
+            .welcome-text {
+                font-size: 2.5em;
             }
-            .dropdown select {
-                padding: 8px;
-                font-size: 16px;
+            .subtext {
+                font-size: 2em;
             }
-            .welcome-text, .subtext {
-                font-size: 1.5em;
+            .button-container {
+                bottom: 40px;
             }
         }
         @media (min-width: 601px) {
@@ -91,10 +80,8 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="welcome-text">Welcome to Florence</div>
-        <div class="subtext">Torre degli Agli</div>
-    </div>
+    <div class="welcome-text">Welcome to Florence</div>
+    <div class="subtext">Torre degli Agli</div>
     
     <div class="button-container">
         <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Click here</a>
