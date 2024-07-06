@@ -17,29 +17,30 @@
             padding: 20px; 
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Align items at the start */
             align-items: center;
             height: 100vh;
             margin: 0;
         }
+        .welcome-text-container {
+            margin-top: 10vh; /* Position the text in the first third of the page */
+            text-align: center;
+        }
         .welcome-text {
             font-family: 'Dancing Script', cursive;
-            font-size: 4em; /* increased size */
+            font-size: 4em; /* Increased size */
             color: purple;
-            text-align: center;
-            margin-bottom: 10px; /* slight margin */
         }
         .subtext {
             font-family: 'Dancing Script', cursive;
-            font-size: 3em; /* increased size */
+            font-size: 3em; /* Increased size */
             color: purple;
-            text-align: center;
-            margin-bottom: 40px; /* slight margin */
+            margin-bottom: 40px; /* Slight margin */
         }
         .button-container { 
             text-align: center; 
             position: absolute; 
-            bottom: 60px; /* positioned slightly higher */
+            bottom: 60px; /* Positioned slightly higher */
             left: 50%; 
             transform: translateX(-50%);
         }
@@ -48,14 +49,14 @@
             padding: 10px 20px;
             font-size: 16px;
             color: white;
-            background-color: purple;
+            background-color: purple; /* Changed to purple */
             border: none;
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
         }
         .button:hover {
-            background-color: #005bb5;
+            background-color: #800080; /* Slightly darker purple for hover effect */
         }
         @media (max-width: 600px) {
             body {
@@ -80,8 +81,10 @@
     </style>
 </head>
 <body>
-    <div class="welcome-text">Welcome to Florence</div>
-    <div class="subtext">Torre degli Agli</div>
+    <div class="welcome-text-container">
+        <div class="welcome-text">Welcome to Florence</div>
+        <div class="subtext">Torre degli Agli</div>
+    </div>
     
     <div class="button-container">
         <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Click here</a>
