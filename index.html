@@ -17,7 +17,7 @@
             padding: 20px; 
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align items at the start */
+            justify-content: center; /* Center items vertically */
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -37,11 +37,13 @@
             font-size: 3em; /* Increased size */
             color: purple;
             text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black; /* Black border */
-            margin-bottom: 40px; /* Slight margin */
         }
         .button-container { 
             text-align: center; 
-            margin-bottom: 30vh; /* Positioned in the third third of the page */
+            position: absolute; 
+            bottom: 20px; /* Positioned at the bottom of the page */
+            left: 50%; 
+            transform: translateX(-50%);
         }
         .button {
             display: inline-block;
@@ -69,7 +71,7 @@
                 font-size: 2em;
             }
             .button-container {
-                bottom: 40px;
+                bottom: 10px;
             }
         }
         @media (min-width: 601px) {
