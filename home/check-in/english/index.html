@@ -13,6 +13,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             padding: 20px;
+            margin-bottom: 80px; /* Add margin to avoid content being hidden behind the fixed button */
         }
         .container { 
             max-width: 800px; 
@@ -37,8 +38,14 @@
             margin: 10px 0; 
         }
         .button-container { 
+            position: fixed; /* Fixed position */
+            bottom: 0; /* At the bottom of the viewport */
+            left: 0; /* Align to left edge */
+            width: 100%; /* Full width */
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             text-align: center; 
-            margin-bottom: 20px; 
+            padding: 10px 0; /* Padding for the button */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow effect */
         }
         .button {
             display: inline-block;
@@ -138,11 +145,10 @@
                 Please always prefer the use of the web app over the offline method.</li>
             <li>In the event of any problem when checking in or when using the Ok Home app, please contact Alessandro, the host, on these numbers: +44 07933289746 (UK) or +39 3333757637 (IT). Thank you!</li>
         </ul>
+    </div>
 
-        <div class="button-container">
-            <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
-        </div>
-
+    <div class="button-container">
+        <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
     </div>
         
 </body>
