@@ -23,19 +23,22 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         }
         h1 { 
-            text-align: center; color: #444; 
+            text-align: center; 
+            color: #444; 
         }
         h2 { 
             color: #0073e6; 
         }
         ul { 
-            list-style: none; padding: 0; 
+            list-style: none; 
+            padding: 0; 
         }
         li { 
             margin: 10px 0; 
         }
         .button-container { 
-            text-align: center; margin-top: 20px; 
+            text-align: center; 
+            margin-top: 20px; 
         }
         .button {
             display: inline-block;
@@ -51,6 +54,12 @@
         .button:hover {
             background-color: #800080;
         }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+        }
         @media (max-width: 600px) {
             body {
                 background-size: auto;
@@ -64,14 +73,15 @@
                 padding: 8px;
                 font-size: 16px;
             }
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
+            }
         }
         @media (min-width: 601px) {
             body {
                 background-image: url('../../../images/florence2.jpg');
             }
         }
-        
-
     </style>
 </head>
 <body>
@@ -80,33 +90,34 @@
         
         <h2>Check-in automatico (tramite il sistema Ok Home)</h2>
         <ul class="top-level">
-            <li><strong>Ricevi l'accesso:</strong> Riceverai un link per accedere a un'app web e un codice di backup per l'uso offline.</li>
-            <li><strong>Accedi:</strong> Utilizza il link fornito per accedere all'app web.</li>
-            <img src="../../../images/app/login page.jpg" alt="Pagina di accesso" style="width:100%;">
+            <li><strong>Ricevi l'accesso:</strong> Riceverai un'email con un link e le credenziali per accedere a un'app web, e un codice di backup per l'uso offline.</li>
+            <li><strong>Accedi:</strong> Usa il link e i dettagli forniti per accedere all'app web.</li>
+            <img src="../../../images/app/login page.jpg" alt="Pagina di accesso" class="centered-image">
             <li><strong>Controllo delle porte:</strong> Dopo aver effettuato l'accesso per la prima volta, vedrai una pagina di benvenuto.</li>
-            <img src="../../../images/app/welcome page.jpg" alt="Pagina di benvenuto" style="width:100%;">
-            <li>Quindi ti verrà chiesto di inserire il tuo numero di telefono</li>
-            <img src="../../../images/app/insert phone number.jpg" alt="Inserisci il numero di telefono" style="width:100%;">
-            <li>Atterrerai finalmente sulla pagina principale dell'app. Clicca su "Apri porta" quando sei in prossimità della porta da aprire.</li>
-            <img src="../../../images/app/app home page.jpg" alt="Pagina principale dell'app" style="width:100%;">
-            <li>Vedrai icone per tre porte: APRI EDIFICIO, APRI PORTA e APRI APPARTAMENTO.</li>
-            <img src="../../../images/app/doors page.jpg" alt="Pagina delle porte" style="width:100%;">
-            <li><strong>APRI EDIFICIO:</strong> Apre la porta sulla strada.</li>
-            <li><strong>APRI PORTA:</strong> Apre la porta al sesto piano (cerca il campanello Nardoni).</li>
+            <img src="../../../images/app/welcome page.jpg" alt="Pagina di benvenuto" class="centered-image">
+            <li>Ti verrà quindi chiesto di inserire il tuo numero di telefono</li>
+            <img src="../../../images/app/insert phone page.jpg" alt="Pagina di inserimento del numero di telefono" class="centered-image">
+            <li>Infine accederai alla pagina principale dell'app. Clicca su "Apri Porta" quando sei in prossimità della porta da aprire.</li>
+            <img src="../../../images/app/app home page.jpg" alt="Pagina principale dell'app" class="centered-image">
+            <li>Vedrai icone per tre porte: PORTA PALAZZO, PORTA PIANEROTTOLO e APRI APPARTAMENTO.</li>
+            <img src="../../../images/app/doors page.jpg" alt="Pagina Apri porta" class="centered-image">
+            <li><strong>PORTA PALAZZO:</strong> Apre la porta sulla strada.</li>
+            <li><strong>PORTA PIANEROTTOLO:</strong> Apre la porta al sesto piano (cerca il campanello Nardoni).</li>
             <li><strong>APRI APPARTAMENTO:</strong> Apre la porta dell'appartamento.</li>
-            <li><strong>Apri le porte:</strong> Clicca sull'icona corrispondente per aprire la porta desiderata.</li>
-            <li><strong>Note:</strong> La porta APRI EDIFICIO impiega 2-3 secondi per rispondere dopo aver cliccato sullo smartphone. 
-                Non cliccare troppo rapidamente tra i pulsanti APRI PORTA e APRI APPARTAMENTO. 
+            <li>Clicca sull'icona corrispondente per aprire la porta desiderata.</li>
+            <li><strong>Note:</strong> La PORTA PALAZZO impiega 2-3 secondi per rispondere dopo aver cliccato sullo smartphone. 
+                Non cliccare troppo rapidamente tra i pulsanti PORTA PIANEROTTOLO e APRI APPARTAMENTO. 
                 Utilizza l'app solo in prossimità della porta.</li>
         </ul>
         
         <h2>Check-in offline (se il sistema Ok Home non è disponibile)</h2>
         <ul class="top-level">
-            <li><strong>PORTA DELL'EDIFICIO:</strong> Suona il campanello "Nardoni" <strong>X volte</strong>. Questo aprirà la PORTA DELL'EDIFICIO sulla strada.</li>
+            <li><strong>PORTA PALAZZO:</strong> Suona il campanello "Nardoni" <strong>X volte</strong>. Questo aprirà la PORTA PALAZZO sulla strada.</li>
             <li><strong>Accesso alle chiavi:</strong> Una volta al 6º piano, utilizza il tastierino numerico per aprire la cassetta delle chiavi vicino alla porta con il campanello Nardoni.</li>
-            <li><strong>APRI PORTA:</strong> Utilizza le chiavi dalla cassetta delle chiavi per aprire la Porta del Pianerottolo. Ritorna le chiavi nella cassetta delle chiavi successivamente.</li>
-            <li><strong>PORTA DELL'APPARTAMENTO:</strong> Utilizza il secondo tastierino numerico e inserisci il codice Ok Home che appare sulla pagina delle porte dell'app web per aprire la PORTA DELL'APPARTAMENTO.</li>
-            <img src="../../../images/app/doors page.jpg" alt="Pagina delle porte" style="width:100%;">
+            <li><strong>PORTA PIANEROTTOLO:</strong> Utilizza le chiavi dalla cassetta delle chiavi per aprire la PORTA PIANEROTTOLO. Ritorna le chiavi nella cassetta delle chiavi successivamente.</li>
+            <li><strong>APRI APPARTAMENTO:</strong> Utilizza il secondo tastierino numerico e inserisci il <strong>codice di accesso</strong> che appare sulla pagina Apri porta nell'app web per APRIRE L'APPARTAMENTO.</li>
+            <li></li>
+            <img src="../../../images/app/doors page.jpg" alt="Pagina Apri porta" class="centered-image">
         </ul>
         
         <h2>Note importanti</h2>
@@ -121,5 +132,4 @@
         </div>
     </div>
 </body>
-
 </html>
