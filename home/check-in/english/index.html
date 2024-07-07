@@ -13,7 +13,6 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             padding: 20px;
-            margin-bottom: 80px; /* Add margin to avoid content being hidden behind the fixed button */
         }
         .container { 
             max-width: 800px; 
@@ -37,16 +36,6 @@
         li { 
             margin: 10px 0; 
         }
-        .button-container { 
-            position: fixed; /* Fixed position */
-            bottom: 0; /* At the bottom of the viewport */
-            left: 0; /* Align to left edge */
-            width: 100%; /* Full width */
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
-            text-align: center; 
-            padding: 10px 0; /* Padding for the button */
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow effect */
-        }
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -57,6 +46,10 @@
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Distance from the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Centering transform */
         }
         .button:hover {
             background-color: #800080;
@@ -147,9 +140,7 @@
         </ul>
     </div>
 
-    <div class="button-container">
-        <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
-    </div>
+    <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
         
 </body>
 </html>
