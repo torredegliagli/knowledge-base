@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <style>
+        html, body {
+            height: 100%; /* Ensure the body takes full height */
+            margin: 0;
+        }
         body { 
             font-family: Arial, sans-serif; 
             background-color: #f4f4f4; 
@@ -12,7 +16,12 @@
             background-size: cover; 
             background-repeat: no-repeat; 
             background-attachment: fixed; 
-            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scroll-container {
+            height: 100%; /* Full height for scrolling content */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px; /* Padding for inner content */
         }
         .container { 
             max-width: 800px; 
