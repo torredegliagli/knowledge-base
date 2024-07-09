@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport Information</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../../../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: #0073e6; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Public Transport Information</h1>
+        
+        <h2>Airport - Via Torre degli Agli, 8</h2>
+        <ul class="top-level">
+            <li>Text placeholder for airport transport information.</li>
+            <br>
+            <img src="../../../images/transports/Agli-Airport.PNG" alt="Airport route" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli-Airport2.PNG" alt="Airport route details" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli-Airport-601px.PNG" alt="Airport route for larger screens" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+        <hr>
+        
+        <h2>Nearest Tram Stop - Via Torre degli Agli, 8</h2>
+        <ul class="top-level">
+            <li>Text placeholder for nearest tram stop information.</li>
+            <br>
+            <img src="../../../images/transports/Agli-Agli.PNG" alt="Tram stop route" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli-Agli2.PNG" alt="Tram stop route details" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli -Agli-601px.PNG" alt="Tram stop route for larger screens" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+        <hr>
+        
+        <h2>City Centre/Train Station - Via Torre degli Agli, 8</h2>
+        <ul class="top-level">
+            <li>Text placeholder for city centre/train station information.</li>
+            <br>
+            <img src="../../../images/transports/Agli-Centro.PNG" alt="City centre route" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli-Centro2.PNG" alt="City centre route details" class="centered-image smartphone-image">
+            <br>
+            <img src="../../../images/transports/Agli-Centro-601px.PNG" alt="City centre route for larger screens" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+        
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
 
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
