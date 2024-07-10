@@ -18,7 +18,7 @@
             background-repeat: no-repeat; 
             background-attachment: fixed; 
             padding: 10px; 
-            overflow-y: auto; /* Allow vertical scrolling */
+            overflow-y: hidden; /* Prevent vertical scrolling */
         }
         h1 { 
             text-align: center; 
@@ -55,7 +55,7 @@
         }
         @media (max-width: 600px) {
             .button {
-                width: 120px; /* Adjusted for small screens */
+                width: 150px; /* Adjusted for small screens */
             }
             .button.back {
                 width: 120px; /* Further reduced width for back button on small screens */
@@ -69,7 +69,6 @@
     </style>
 </head>
 <body>
-    <h1>Home page</h1>
     <div class="button-container">
         <a href="come_arrivare.html" class="button">Come arrivare</a>
     </div>
