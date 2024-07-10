@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moulinex Toaster</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body { 
             font-family: Arial, sans-serif; 
             background-color: #f4f4f4; 
@@ -13,6 +17,11 @@
             background-repeat: no-repeat; 
             background-attachment: fixed; 
             padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
         .container { 
             max-width: 800px; 
@@ -24,18 +33,20 @@
         h1 { 
             text-align: center; 
             color: black; 
-           }
+        }
         h2 { 
             color: purple; 
-           }
+        }
         ul { 
-            list-style: none; padding: 0; 
-           }
+            list-style: none; 
+            padding: 0; 
+        }
         li { 
             margin: 10px 0; 
-           }
+        }
         .button-container { 
-            text-align: center; margin-top: 20px; 
+            text-align: center; 
+            margin-top: 20px; 
         }
         .button {
             display: inline-block;
@@ -74,64 +85,65 @@
                 background-image: url('../../../images/florence2.jpg');
             }
         }
-        
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>User Instructions for Moulinex Toaster</h1>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>User Instructions for Moulinex Toaster</h1>
 
-        <h2>Setting Up the Toaster</h2>
-        <ul>
-            <li>Place the toaster on a flat, stable, heat-resistant surface away from flammable materials such as curtains or shelves.</li>
-            <li>Ensure the crumb tray is correctly fitted.</li>
-        </ul>
+            <h2>Setting Up the Toaster</h2>
+            <ul>
+                <li>Place the toaster on a flat, stable, heat-resistant surface away from flammable materials such as curtains or shelves.</li>
+                <li>Ensure the crumb tray is correctly fitted.</li>
+            </ul>
 
-        <h2>Operating the Toaster</h2>
-        <ul>
-            <li><strong>Plugging In</strong>: Plug the toaster into an earthed socket.</li>
-            <li><strong>Inserting Bread</strong>: Place the bread slices into the slots.</li>
-            <li><strong>Selecting Browning Level</strong>: Use the control knob to select the browning level.</li>
-            <li><strong>Starting the Toasting Process</strong>: Press the lever down to start toasting.</li>
-            <li><strong>Stopping the Toaster</strong>: Stop the toasting at any time by pressing the stop button.</li>
-        </ul>
+            <h2>Operating the Toaster</h2>
+            <ul>
+                <li><strong>Plugging In</strong>: Plug the toaster into an earthed socket.</li>
+                <li><strong>Inserting Bread</strong>: Place the bread slices into the slots.</li>
+                <li><strong>Selecting Browning Level</strong>: Use the control knob to select the browning level.</li>
+                <li><strong>Starting the Toasting Process</strong>: Press the lever down to start toasting.</li>
+                <li><strong>Stopping the Toaster</strong>: Stop the toasting at any time by pressing the stop button.</li>
+            </ul>
 
-        <h2>Functions</h2>
-        <ul>
-            <li><strong>Defrost Function</strong>: Use the defrost function by pressing the designated button before starting the toasting process.</li>
-            <li><strong>Reheat Function</strong>: Use the reheat function by pressing the designated button. The toaster will warm the bread without further toasting.</li>
-            <li><strong>High-Lift Lever</strong>: Use the high-lift lever to safely remove smaller pieces of bread.</li>
-        </ul>
+            <h2>Functions</h2>
+            <ul>
+                <li><strong>Defrost Function</strong>: Use the defrost function by pressing the designated button before starting the toasting process.</li>
+                <li><strong>Reheat Function</strong>: Use the reheat function by pressing the designated button. The toaster will warm the bread without further toasting.</li>
+                <li><strong>High-Lift Lever</strong>: Use the high-lift lever to safely remove smaller pieces of bread.</li>
+            </ul>
 
-        <h2>After Use</h2>
-        <ul>
-            <li>The toaster will automatically pop up the bread once the cycle is complete.</li>
-            <li>Unplug the toaster when not in use and before cleaning.</li>
-            <li>Allow the toaster to cool down before removing and cleaning the crumb tray.</li>
-            <li>Regularly empty the crumb tray to prevent build-up.</li>
-        </ul>
+            <h2>After Use</h2>
+            <ul>
+                <li>The toaster will automatically pop up the bread once the cycle is complete.</li>
+                <li>Unplug the toaster when not in use and before cleaning.</li>
+                <li>Allow the toaster to cool down before removing and cleaning the crumb tray.</li>
+                <li>Regularly empty the crumb tray to prevent build-up.</li>
+            </ul>
 
-        <h2>Cleaning and Maintenance</h2>
-        <ul>
-            <li>Clean the toaster with a soft cloth. Avoid using abrasive cleaners, scouring pads, or metal utensils.</li>
-        </ul>
+            <h2>Cleaning and Maintenance</h2>
+            <ul>
+                <li>Clean the toaster with a soft cloth. Avoid using abrasive cleaners, scouring pads, or metal utensils.</li>
+            </ul>
 
-        <h2>Safety Precautions</h2>
-        <ul>
-            <li>Supervise the toaster while in use.</li>
-            <li>Do not insert oversized foods, metal utensils, or foil packages into the toaster slots to avoid electric shock or fire.</li>
-            <li>Avoid touching the metal parts or hot surfaces during and immediately after use.</li>
-            <li>If the bread gets stuck, unplug the toaster and let it cool before attempting to remove the bread.</li>
-        </ul>
+            <h2>Safety Precautions</h2>
+            <ul>
+                <li>Supervise the toaster while in use.</li>
+                <li>Do not insert oversized foods, metal utensils, or foil packages into the toaster slots to avoid electric shock or fire.</li>
+                <li>Avoid touching the metal parts or hot surfaces during and immediately after use.</li>
+                <li>If the bread gets stuck, unplug the toaster and let it cool before attempting to remove the bread.</li>
+            </ul>
 
-        <h2>Troubleshooting</h2>
-        <ul>
-            <li>If the bread does not pop up or the toaster does not heat, ensure it is properly plugged in and the lever is fully pressed down.</li>
-            <li>For any anomalies or if the toaster does not operate correctly, unplug it and contact the host.</li>
-        </ul>
+            <h2>Troubleshooting</h2>
+            <ul>
+                <li>If the bread does not pop up or the toaster does not heat, ensure it is properly plugged in and the lever is fully pressed down.</li>
+                <li>For any anomalies or if the toaster does not operate correctly, unplug it and contact the host.</li>
+            </ul>
 
-        <div class="button-container">
-            <a href="https://torredegliagli.github.io/knowledge-base/home/docs/english" class="button">Documentation</a>
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/home/docs/english" class="button">Documentation</a>
+            </div>
         </div>
     </div>
 </body>
