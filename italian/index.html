@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 10px; /* Reduced padding */
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 20px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 10px; /* Reduced padding */
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 8px; 
+            margin-bottom: 10px; /* Reduced margin */
+        }
+        h1 { 
+            text-align: center; 
+            margin: 10px 0; /* Reduced margin */
+        }
+        .dropdown { 
+            margin: 5px 0; /* Reduced margin */
+        }
+        .dropdown select { 
+            width: 100%; 
+            padding: 8px; /* Reduced padding */
+            font-size: 18px; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 10px; /* Reduced margin */
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 15px; /* Reduced padding */
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 8px; /* Reduced padding */
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Ok Home info</h1>
+            <div class="dropdown">
+                <select id="checkinSelect" onchange="redirectToFolder('checkinSelect')">
+                    <option value="">Select Language</option>
+                    <!-- <option value="check-in/english">English</option> -->
+                    <option value="okhome_checkin.html">Italian</option>
+                    <!-- <option value="french/check-in">French</option> -->
+                    <!-- <option value="german/check-in">German</option> -->
+                    <!-- <option value="spanish/check-in">Spanish</option> -->
+                    <!-- <option value="arabic/check-in">Arabic</option> -->
+                    <!-- <option value="chinese/check-in">Chinese</option> -->
+                    <!-- <option value="japanese/check-in">Japanese</option> -->
+                    <!-- <option value="russian/check-in">Russian</option> -->
+                    <!--<option value="portuguese/check-in">Portuguese</option> -->
+                </select>
+            </div>
+        </div>
 
+        <div class="container">
+            <h1>Come arrivare</h1>
+            <div class="dropdown">
+                <select id="directionSelect" onchange="redirectToFolder('directionSelect')">
+                    <option value="">Select Language</option>
+                    <!-- <option value="check-in/english">English</option> -->
+                    <option value="come_arrivare.html">Italian</option>
+                    <!-- <option value="french/check-in">French</option> -->
+                    <!-- <option value="german/check-in">German</option> -->
+                    <!-- <option value="spanish/check-in">Spanish</option> -->
+                    <!-- <option value="arabic/check-in">Arabic</option> -->
+                    <!-- <option value="chinese/check-in">Chinese</option> -->
+                    <!-- <option value="japanese/check-in">Japanese</option> -->
+                    <!-- <option value="russian/check-in">Russian</option> -->
+                    <!--<option value="portuguese/check-in">Portuguese</option> -->
+                </select>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Regole della casa</h1>
+            <div class="dropdown">
+                <select id="houseRulesSelect" onchange="redirectToFolder('houseRulesSelect')">
+                    <option value="">Select Language</option>
+                    <!-- <option value="check-in/english">English</option> -->
+                    <option value="regole_casa.html">Italian</option>
+                    <!-- <option value="french/rules">French</option> -->
+                    <!-- <option value="german/rules">German</option> -->
+                    <!-- <option value="spanish/rules">Spanish</option> -->
+                    <!-- <option value="arabic/rules">Arabic</option> -->
+                    <!-- <option value="chinese/rules">Chinese</option> -->
+                    <!-- <option value="japanese/rules">Japanese</option> -->
+                    <!-- <option value="russian/rules">Russian</option> -->
+                    <!-- <option value="portuguese/rules">Portuguese</option> -->
+                </select>
+            </div>            
+        </div>
+            
+        <div class="container">
+            <h1>Istruzioni dispositivi</h1>
+            <div class="dropdown">
+                <select id="documentationSelect" onchange="redirectToFolder('documentationSelect')">
+                    <option value="">Select Language</option>
+                    <!-- <option value="check-in/english">English</option> -->
+                    <option value="istruzioni_dispositivi">Italian</option>
+                    <!-- <option value="french/docs">French</option> -->
+                    <!-- <option value="german/docs">German</option> -->
+                    <!-- <option value="spanish/docs">Spanish</option> -->
+                    <!-- <option value="arabic/docs">Arabic</option> -->
+                    <!-- <option value="chinese/docs">Chinese</option> -->
+                    <!-- <option value="japanese/docs">Japanese</option> -->
+                    <!-- <option value="russian/docs">Russian</option> -->
+                    <!-- <option value="portuguese/docs">Portuguese</option> -->
+                    <option value="../manuali">Manuali d'installazione</option>
+                </select>
+            </div>
+        </div>
+
+            
+        <div class="container">
+            <h1>Trasporti e consigli</h1>
+            <div class="dropdown">
+                <select id="recommendationSelect" onchange="redirectToFolder('recommendationSelect')">
+                    <option value="">Select Language</option>
+                    <!-- <option value="recommendation/english">English</option> -->
+                    <option value="trasporti_consigli/index.html">Italian</option>
+                    <!-- <option value="french/docs">French</option> -->
+                    <!-- <option value="german/docs">German</option> -->
+                    <!-- <option value="spanish/docs">Spanish</option> -->
+                    <!-- <option value="arabic/docs">Arabic</option> -->
+                    <!-- <option value="chinese/docs">Chinese</option> -->
+                    <!-- <option value="japanese/docs">Japanese</option> -->
+                    <!-- <option value="russian/docs">Russian</option> -->
+                    <!-- <option value="portuguese/docs">Portuguese</option> -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base" class="button">Indietro</a>
+        </div>
+    </div>
+    
+    <script>
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
