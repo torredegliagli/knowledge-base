@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommendations</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body { 
             font-family: Arial, sans-serif; 
             background-color: #f4f4f4; 
@@ -13,10 +17,16 @@
             background-repeat: no-repeat; 
             background-attachment: fixed; 
             padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
         .container { 
             max-width: 800px; 
-            margin: 0 auto; padding: 20px; 
+            margin: 0 auto; 
+            padding: 20px; 
             background: white; 
             border-radius: 8px; 
             margin-bottom: 20px; 
@@ -25,14 +35,16 @@
             text-align: center; 
         }
         .file-list { 
-            list-style: none; padding: 0; 
+            list-style: none; 
+            padding: 0; 
         }
         .file-list li { 
             margin: 10px 0; 
         }
         .file-list a { 
             text-decoration: none; 
-            color: purple; font-size: 16px; 
+            color: purple; 
+            font-size: 16px; 
         }
         .file-list a:hover { 
             text-decoration: underline; 
@@ -77,18 +89,20 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Recommendations</h1>
-        <ul class="file-list">
-            <li><a href="transports.html">Getting to the apartment</a></li>
-            <li><a href="neighborhood.html">Neighborhood</a></li>
-            <li><a href="food&restaurants.html">Food and restaurants</a></li>
-                      
-            <!-- Add more files as needed -->
-        </ul>
-                
-        <div class="button-container">
-            <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Recommendations</h1>
+            <ul class="file-list">
+                <li><a href="transports.html">Getting to the apartment</a></li>
+                <li><a href="neighborhood.html">Neighborhood</a></li>
+                <li><a href="food&restaurants.html">Food and restaurants</a></li>
+                          
+                <!-- Add more files as needed -->
+            </ul>
+                    
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home page</a>
+            </div>
         </div>
     </div>
 </body>
