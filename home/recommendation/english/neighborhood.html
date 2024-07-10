@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neighborhood</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body { 
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -13,6 +17,11 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             padding: 20px;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
         .container { 
             max-width: 800px; 
@@ -89,34 +98,34 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Neighborhood</h1>
-        <p>The Novoli area, while not in the bustling city center, offers a quiet and convenient retreat with a variety of local amenities.</p>
-        <hr>
-        
-        <h2>Around the corner</h2>
-        <ul class="top-level">
-            <li>Enjoy the real italian breakfast at Pasticceria Gaetano just 10 meters away, delicious baked goods from La Schiacciateria bakery, 
-            and experience the famous 'panino con il lampredotto' from the Ambrogi's butcher. 
-            A kebab place and a small grocery shop are just around the corner, and a renowned fish restaurant is also within walking distance. 
-            For shopping, a large mall and a large grocery store are just a 10-15 minute walk away.</li>
-            <br>
-            <img src="../../../images/transports/Neighborhood2.png" alt="Airport route" class="centered-image smartphone-image">
-            <br>
-            <img src="../../../images/transports/Neighborhood2.png" alt="Airport route for larger screens" class="centered-image large-screen-image" style="display: none;">
-        </ul>
-        <hr>
-        
-        <h2>Notes</h2>
-        <ul class="top-level">
-            <li>Placeholder text.</li>
-        </ul>
-        
-        <div class="button-container">
-            <a href="https://torredegliagli.github.io/knowledge-base/home/recommendation/english" class="button">Recommendations</a>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Neighborhood</h1>
+            <p>The Novoli area, while not in the bustling city center, offers a quiet and convenient retreat with a variety of local amenities.</p>
+            <hr>
+            
+            <h2>Around the corner</h2>
+            <ul class="top-level">
+                <li>Enjoy the real italian breakfast at Pasticceria Gaetano just 10 meters away, delicious baked goods from La Schiacciateria bakery, 
+                and experience the famous 'panino con il lampredotto' from the Ambrogi's butcher. 
+                A kebab place and a small grocery shop are just around the corner, and a renowned fish restaurant is also within walking distance. 
+                For shopping, a large mall and a large grocery store are just a 10-15 minute walk away.</li>
+                <br>
+                <img src="../../../images/transports/Neighborhood2.png" alt="Airport route" class="centered-image smartphone-image">
+                <br>
+                <img src="../../../images/transports/Neighborhood2.png" alt="Airport route for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+            
+            <h2>Notes</h2>
+            <ul class="top-level">
+                <li>Placeholder text.</li>
+            </ul>
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/home/recommendation/english" class="button">Recommendations</a>
+            </div>
         </div>
-
-        
     </div>
     
     <script>
