@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */ 
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+        h1 { 
+            text-align: center; 
+            margin: 10px 0; 
+            color: black;
+        }
+        .button-container { 
+            width: 100%;
+            text-align: center; 
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            width: 200px; /* Adjusted width */
+            margin: 5px 0; /* Reduced margin */
+            padding: 10px; /* Reduced padding */
+            font-size: 16px; /* Adjusted font size */
+            color: white;
+            background-color: purple; 
+            border: 2px solid black; 
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .button.back {
+            width: 150px; /* Further reduced width for back button */
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 600px) {
+            .button {
+                width: 150px; /* Adjusted for small screens */
+            }
+            .button.back {
+                width: 120px; /* Further reduced width for back button on small screens */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="direction.html" class="button">Directions</a>
+    </div>
+    <div class="button-container">
+        <a href="okhome_checkin.html" class="button">Check in / Ok Home</a>
+    </div>    
+    <div class="button-container">
+        <a href="house_rules.html" class="button">House rules</a>
+    </div>
+    <div class="button-container">
+        <a href="devices_instructions/index.html" class="button">Devices information</a>
+    </div>
+    <div class="button-container">
+        <a href="transports_suggestions/index.html" class="button">Transports and suggestions</a>
+    </div>
+    <div class="button-container">
+        <a href="https://torredegliagli.github.io/knowledge-base" class="button back">Indietro</a>
+    </div>
+</body>
+</html>
