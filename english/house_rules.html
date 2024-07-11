@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rules</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .note { 
+            color: red; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 300px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>House Rules</h1>
+            
+            <ul class="top-level">
+                <li><strong>Check-in:</strong> after 3:00 PM</li>
+                <li><strong>Check-out:</strong> by 10:00 AM</li>
+                <li><strong>No Smoking:</strong> Do not smoke inside the apartment.</li>
+                <li><strong>Pets:</strong> Unfortunately, pets are not allowed.</li>
+                <li><strong>Quiet Hours:</strong> Please respect our neighbors by keeping noise to a minimum between 10:00 PM and 8:00 AM.</li>
+                <li><strong>Safety Measures:</strong> Make sure all appliances are turned off, windows are not wide open, and the door is locked when you leave.</li>
+                <li><strong>Waste Disposal:</strong> Separate waste and use the provided bins. You will need an electronic key (provided) to use the external bins on the street.</li>
+                <li><strong>Damage:</strong> Inform us immediately if something is damaged. You are responsible for any damage during your stay.</li>
+                <li><strong>Maximum Occupancy:</strong> Up to 4 guests are allowed.</li>
+                <li><strong>No Parties:</strong> Parties or events are not allowed.</li>
+                <li><strong>Visitors:</strong> Visitors are welcome but overnight stays are not permitted.</li>
+                <li><strong>Parking:</strong> There is no reserved parking, but you can usually find a spot on Via della Torre degli Agli. Use these coordinates: 43°47'42.5"N 11°13'09.3"E.</li>
+                <li><strong>Kitchen Use:</strong> Clean up after using the kitchen. Do not leave dirty dishes or perishable food, and make sure all appliances are turned off when you are finished.</li>
+                <li><strong>Bathroom Use:</strong> Keep the bathroom clean. Only flush toilet paper and report any plumbing issues immediately.</li>
+                <li><strong>Washing Machine Use:</strong> Follow the instructions for using the washing machine. Do not overload it and remove laundry promptly to avoid mold.</li>
+                <li><strong>Emergency Contacts:</strong>
+                    <ul class="nested">
+                        <li><strong>24h Emergency number:</strong> 112</li>
+                        <li><strong>English-speaking medical services:</strong> +39 320 406 5709, <a href="https://www.doctorsinitaly.com">doctorsinitaly.com</a></li>
+                        <li><strong>24-hour Pharmacy (Farmacia Santa Maria Novella):</strong> Via della Scala, 19, +39 055 216761</li>
+                    </ul>
+                </li>
+                <li><strong>Wi-Fi Use and internet:</strong> Please avoid illegal activities online and any illegal use of the information provided on the apartment website.</li>
+                <li><strong>Local Laws:</strong> Follow all local laws and regulations.</li>
+                <li><strong>Respect for Property:</strong> Treat the apartment and its contents with respect.</li>
+                <li><strong>Lost and Found:</strong> Contact us immediately if you find or lose personal items.</li>
+            </ul>
 
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/home" class="button">Home Page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
