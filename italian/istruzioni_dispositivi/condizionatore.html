@@ -114,7 +114,7 @@
                 <li><strong>B9:</strong> Impostazione orologio/programmazione.</li>
                 <li><strong>B10:</strong> Programmazione.</li>
                 <br>
-                <img src="../../images/dispositivi/condizionatore/Telecomando.PNG.PNG" alt="Telecomando condizionatore" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/Telecomando.PNG" alt="Telecomando condizionatore" class="centered-image smartphone-image">
                 <br>
                 <img src="../../images/dispositivi/condizionatore/telecomando.601px.PNG" alt="Telecomando condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;">
             </ul>
@@ -182,5 +182,27 @@
         </div>
             
     </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+    
 </body>
 </html>
