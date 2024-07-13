@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istruzioni induzione</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden;
+        }
+        .scrollable-content {
+            height: calc(100% - 40px);
+            overflow-y: auto;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto;
+            border: 1px solid purple;
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Istruzioni induzione</h1>
 
+            <h2>Sicurezza</h2>
+            <ul>
+                <li>Non utilizzare il piano cottura se la superficie è incrinata.</li>
+                <li>Non appoggiare oggetti sulle superfici di cottura.</li>
+                <li>Sorvegliare sempre il processo di cottura, soprattutto con grassi e oli.</li>
+                <li>Tenere i bambini lontani dal piano cottura.</li>
+            </ul>
+          
+            <h2>Accensione e spegnimento</h2>
+            <ul>
+                <li><strong>Per accendere:</strong> premere il tasto di accensione per circa 1 secondo.</li>
+                <li><strong>Per spegnere:</strong> premere lo stesso tasto; tutte le zone di cottura si disattivano.</li>
+                <img src="../../images/dispositivi/induzione/induzione.pannello.PNG" alt="Induzione" class="centered-image smartphone-image">
+                <br>
+                <img src="../../images/dispositivi/induzione/induzione.pannello.PNG" alt="Induzione for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+          
+
+            <h2>Uso quotidiano</h2>
+            <ul>
+                <li><strong>Selezione della zona di cottura:</strong> premere il tasto di selezione zona corrispondente.</li>
+                <li><strong>Regolazione della potenza:</strong> utilizzare i tasti "+" e "-" per regolare il livello di potenza da 1 a 9.</li>
+                <li><strong>Booster:</strong> alcune zone di cottura hanno la funzione di riscaldamento rapido (Booster), visualizzata con la lettera "P".</li>
+                <li><strong>Disattivazione:</strong> per disattivare una zona di cottura, selezionarla e premere "-" fino a portare il livello a "0".</li>
+                <img src="../../images/dispositivi/induzione/induzione.posizione.PNG" alt="Induzione posizione" class="centered-image smartphone-image">
+                <br>
+                <img src="../../images/dispositivi/induzione/induzione.posizione.PNG" alt="Induzione posizione for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+
+            <h2>Funzioni Speciali</h2>
+            <ul>
+                <li><strong>My Menu:</strong> premere il tasto “My menu” per attivare funzioni speciali come Fondere, Mantenere in Caldo, Cottura Lenta e Bollire.</li>
+                <li><strong>Fondere:</strong> per sciogliere e mantenere cibi delicati come il cioccolato senza rischio di bruciature.</li>
+                <li><strong>Mantenere in Caldo:</strong> per mantenere le preparazioni alla temperatura ideale.</li>
+                <li><strong>Cottura Lenta:</strong> per cuocere per lunghi periodi senza bruciare i cibi.</li>
+                <li><strong>Bollire:</strong> per portare l'acqua a ebollizione e mantenerla con un minor consumo energetico.</li>
+            </ul>
+
+            <h2>Blocco del Pannello Comandi</h2>
+            <ul>
+                <li>Premere per 3 secondi il tasto My menu/Blocco tasti per bloccare le impostazioni e evitare attivazioni accidentali. Per disattivare, ripetere la procedura.</li>
+            </ul>
+
+            <h2>Timer</h2>
+            <ul>
+                <li>Selezionare e attivare la zona di cottura desiderata, poi premere l'icona dell'orologio e impostare il tempo con i tasti "+" e "-".</li>
+                <li>Il timer inizierà il conto alla rovescia e spegnerà automaticamente la zona di cottura allo scadere del tempo.</li>
+            </ul>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Documentazione</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
