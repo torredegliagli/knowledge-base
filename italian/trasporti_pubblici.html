@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasporti pubblici</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+        p { 
+            text-align: center; /* Center the paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Trasporti pubblici</h1>
+            <p>Di seguito puoi trovare le informazioni su come raggiungere il centro storico e altre parti della città.</p>
+            <hr>
 
+            <h2>Fermata del tram più vicina</h2>
+            <ul class="top-level">
+                <li>La fermata del tram più vicina è <strong>Novoli - Torre degli Agli</strong>. È a solo 2 minuti a piedi da Via della Torre degli Agli, 8. 
+                    Quando scendi dal tram, cammina lungo Via di Novoli, quindi gira su Via della Torre degli Agli per raggiungere l'appartamento.</li>
+                <br>
+                <img src="../images/transports/Agli-Agli.PNG" alt="Tram stop route" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/Agli -Agli-601px.PNG" alt="Tram stop route for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+            
+            <h2>Per il centro storico</h2>
+            <ul class="top-level">
+                <li>Da Via della Torre degli Agli, 8, cammina fino alla fermata del tram e prendi il <strong>Tram T2</strong> da <strong>Novoli - Torre Degli Agli</strong> fino a <strong>Unità</strong>, 
+                  che si trova vicino alla stazione ferroviaria di Santa Maria Novella. Il viaggio in tram dura circa 19 minuti, con tram che passano ogni 6 minuti.</li>
+                <br>
+                <img src="../images/transports/Agli-Centro.PNG" alt="Percorso per il centro città" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/Agli-Centro2.PNG" alt="Dettagli del percorso per il centro città" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/Agli-Centro-601px.PNG" alt="Percorso per il centro città per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>     
+                              
+    
+            <h2>Per XXX</h2>
+            <ul class="top-level">
+                <li>####</li>
+                <br>
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Percorso del parcheggio" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Percorso del parcheggio per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Per XXX</h2>
+            <ul class="top-level">
+                <li>###</li>
+                <br>
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Percorso del parcheggio" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Percorso del parcheggio per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+            
+            <h2>Note</h2>
+            <ul class="top-level">
+                <li>L'appartamento offre una base strategica per esplorare la città.</li>
+                <li>È a 2 minuti a piedi dalla fermata del tram <strong>Novoli - Torre degli Agli</strong>, 
+                    che si trova sulla linea del <strong>Tram T2</strong> che collega l'aeroporto al centro città e alla stazione ferroviaria di Santa Maria Novella.</li>
+                <li>10 minuti per l'aeroporto.</li>
+                <li>19 minuti per la stazione ferroviaria di Santa Maria Novella.</li>
+                <li>19 minuti per il centro città.</li>
+            </ul>
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/index.html" class="button">Home page</a>
+            </div>
+    
+            
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach((img) => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach((img) => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
