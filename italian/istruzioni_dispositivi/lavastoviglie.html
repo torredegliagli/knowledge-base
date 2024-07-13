@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istruzioni lavastoviglie</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Istruzioni lavastoviglie</h1>
+
+            <h2>Descrizione del prodotto</h2>
+            <ul>
+                <li><strong>Cestello superiore:</strong> per piatti poco resistenti e stoviglie delicate come vetri, tazze, piattini e insalatiere dai bordi bassi.</li>
+                <li><strong>Cestello inferiore:</strong> per pentole, coperchi, piatti, insalatiere e stoviglie di grandi dimensioni.</li>
+                <li><strong>Cestello portaposate:</strong> per posate e piccoli oggetti.</li>
+                <li><strong>Distributori:</strong> per detersivo e brillantante.</li>
+                <br>
+                <img src="../images/dispositivi/lavastoviglie.display.PNG" alt="Lavastoviglie" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/lavastoviglie.display2.PNG" alt="Lavastoviglie" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/dispositivi/lavastoviglie.display.px601.PNG" alt="Lavastoviglie per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+
+            <h2>Uso Quotidiano</h2>
+            <ul>
+                <li><strong>Verifica del Collegamento:</strong> assicurarsi che la lavastoviglie sia collegata alla rete idrica e che il rubinetto dell'acqua sia aperto.</li>
+                <li><strong>Accensione:</strong> aprire la porta e premere il tasto accensione/spegnimento.</li>
+                <li><strong>Caricamento dei Cestelli:</strong> caricare i cestelli con le stoviglie come descritto sopra.</li>
+                <li><strong>Riempimento del Distributore del Detersivo:</strong> aggiungere il detersivo nel distributore.</li>
+                <li><strong>Selezione del Programma:</strong> selezionare il programma desiderato premendo il tasto P.</li>
+                <li><strong>Avvio:</strong> premere il tasto avvio/pausa e chiudere la porta entro 4 secondi. All'avvio del programma viene emesso un segnale acustico.</li>
+            </ul>
+
+            <h2>Programmi</h2>
+            <ul>
+                <li><strong>Eco:</strong> per stoviglie mediamente sporche; il programma più efficiente in termini di consumo combinato di acqua ed energia.</li>
+                <li><strong>Intensivo:</strong> per stoviglie e pentole molto sporche (non usare per pezzi delicati).</li>
+                <li><strong>Misti:</strong> per piatti con sporco normale e residui secchi di cibo.</li>
+                <li><strong>Lavaggio Rapido:</strong> per un carico ridotto di stoviglie normalmente sporche, permette di ottenere un risultato di lavaggio ottimale in un tempo più breve.</li>
+                <li><strong>Delicati:</strong> per oggetti delicati, più sensibili alle temperature elevate, ad esempio bicchieri e tazze.</li>
+                <br>
+                <img src="../images/transports/lavastoviglie.programmi.PNG" alt="Lavastoviglie programmi" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/dispositivi/lavastoviglie.programmi.px601.PNG" alt="Lavastoviglie programmi per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+
+            <h2>Fine del Ciclo di Lavaggio</h2>
+            <ul>
+                <li><strong>Indicazione di fine:</strong> la conclusione del ciclo è indicata da un segnale acustico e dal lampeggio dell'indicatore del programma selezionato.</li>
+                <li><strong>Spegimento:</strong> aprire la porta e spegnere l'apparecchio premendo il tasto accensione/spegnimento.</li>
+                <li><strong>Scarico:</strong> attendere alcuni minuti prima di rimuovere le stoviglie per evitare bruciature, quindi scaricare prima il cestello inferiore e poi quello superiore.</li>
+            </ul>
+
+            <h2>Consigli Utili</h2>
+            <ul>
+                <li><strong>Risparmio energetico:</strong> avviare la lavastoviglie solo a pieno carico per ottimizzare il consumo di acqua ed energia.</li>
+                <li><strong>Aggiunta di stoviglie:</strong> se necessario, aggiungere stoviglie durante il ciclo aprendo la porta, premendo il tasto avvio/pausa e richiudendo la porta entro 4 secondi.</li>
+                <li><strong>Modifica del programma:</strong> se si desidera cambiare il programma, spegnere l'apparecchio e riaccenderlo selezionando il nuovo ciclo.</li>
+            </ul>
+
+            <h2>Risoluzione dei Problemi</h2>
+            <ul>
+                <li><strong>Indicatore del sale acceso:</strong> il serbatoio del sale è vuoto. Riempirlo con sale specifico per lavastoviglie.</li>
+                <li><strong>Indicatore del brillantante acceso:</strong> la vaschetta del brillantante è vuota. Riempirla con brillantante specifico per lavastoviglie.</li>
+                <li><strong>La lavastoviglie non si avvia:</strong> controllare che l'apparecchio sia correttamente collegato alla corrente elettrica e che la porta sia ben chiusa.</li>
+                <li><strong>Rumorosità eccessiva:</strong> sistemare correttamente le stoviglie nei cestelli e verificare che non ostacolino la rotazione dei bracci aspersori.</li>
+                <li><strong>Piatti non puliti:</strong> verificare la disposizione delle stoviglie, il livello di detersivo e che i filtri non siano ostruiti.</li>
+            </ul>
+
+            <ul>
+                <img src="../images/dispositivi/lavastoviglie.descizione.PNG" alt="Lavastoviglie descizione" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/transports/lavastoviglie.descizione2.PNG" alt="Lavastoviglie descizione" class="centered-image smartphone-image">
+                <br>
+                <img src="../images/dispositivi/lavastoviglie.descizione.px601.PNG" alt="Lavastoviglie descizione per schermi più grandi" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Documentazione</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
