@@ -1,1 +1,108 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigli</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+        }
+        h1 { 
+            text-align: center; 
+        }
+        .file-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        .file-list li { 
+            margin: 10px 0; 
+        }
+        .file-list a { 
+            text-decoration: none; 
+            color: purple; 
+            font-size: 16px; 
+        }
+        .file-list a:hover { 
+            text-decoration: underline; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        @media (max-width: 300px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Consigli</h1>
+            <ul class="file-list">
+                <li><a href="dintorni_agli.html">Quartiere e dintorni</a></li>
+                <li><a href="prodotti_ristoranti.html">Consigli, cibo e ristoranti</a></li>
+                          
+                <!-- Add more files as needed -->
+            </ul>
+                    
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian" class="button">Home page</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
