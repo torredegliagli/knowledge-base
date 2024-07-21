@@ -46,7 +46,13 @@
             margin: 10px 0; 
             display: flex;
             align-items: center;
-            justify-content: space-between;
+        }
+        li::before {
+            content: "•"; /* Bullet point */
+            color: purple; /* Bullet color */
+            display: inline-block; 
+            width: 1em; /* Width of the bullet */
+            margin-left: -1em; /* Position bullet outside */
         }
         .button-container { 
             text-align: center; 
@@ -78,14 +84,13 @@
             height: auto; /* Maintain aspect ratio */
             margin: 0 10px; /* Space around the image */
         }
-        .flex-container {
-            display: flex;
-            align-items: center; /* Vertically center items */
-            justify-content: space-between;
-        }
         .nested {
             list-style: disc;
             padding-left: 20px;
+        }
+        .flex-container {
+            display: flex;
+            align-items: center;
         }
         @media (max-width: 600px) {
             body {
@@ -154,25 +159,26 @@
                     <span><strong>Modalità automatico:</strong> regola automaticamente la temperatura e la velocità della ventola. Premere il tasto B5</span>
                     <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità automatico" class="small-image">
                     <span>fino a visualizzare il simbolo D5</span>
-                    <img src="../../images/dispositivi/condizionatore/d5.PNG" alt="Modalità automatico" class="small-image">.
+                    <img src="../../images/dispositivi/condizionatore/d5.PNG" alt="Simbolo D5" class="small-image">.
                 </li>
                 <li class="flex-container">
                     <span><strong>Modalità deumidificazione:</strong> deumidifica l'ambiente. Premere il tasto B5</span>
                     <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità deumidificazione" class="small-image">
                     <span>fino a visualizzare il simbolo D3 e la ventilazione minima D18</span>
-                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Modalità automatico" class="small-image">.
+                    <img src="../../images/dispositivi/condizionatore/d3.PNG" alt="Simbolo D3" class="small-image">
+                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Simbolo D18" class="small-image">.
                 </li>
                 <li class="flex-container">
                     <span><strong>Modalità ventilazione:</strong> non agisce su temperatura o umidità. Premere il tasto B5</span>
                     <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità ventilazione" class="small-image">
                     <span>fino a visualizzare il simbolo della ventilazione minima D18</span>
-                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Modalità automatico" class="small-image">.
+                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Simbolo D18" class="small-image">.
                 </li>
                 <li class="flex-container">
                     <span><strong>Modalità riscaldamento:</strong> riscalda l'ambiente. Premere il tasto B5</span>
                     <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità riscaldamento" class="small-image">
                     <span>fino a visualizzare il simbolo D1</span>
-                    <img src="../../images/dispositivi/condizionatore/d1.PNG" alt="Modalità automatico" class="small-image">.
+                    <img src="../../images/dispositivi/condizionatore/d1.PNG" alt="Simbolo D1" class="small-image">.
                 </li>
                 <li class="flex-container">
                     <span><strong>Controllo del flusso d'aria:</strong> premere il tasto B4</span>
