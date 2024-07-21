@@ -192,11 +192,23 @@
         </div>
     </div>
 
-  <script>
+    <script>
         const isLargeScreen = window.innerWidth > 600;
-
+    
         if (isLargeScreen) {
-
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
             }
         }
     </script>
