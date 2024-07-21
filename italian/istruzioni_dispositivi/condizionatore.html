@@ -70,12 +70,14 @@
             height: auto; /* Maintain aspect ratio */
             border: 1px solid purple; /* Default border */
         }
-        .centered-image.small {
-            display: block;
-            margin: 10px auto;
-            width: 50%;
+        .small-image {
+            width: 50px; /* Adjust size as needed */
             height: auto; /* Maintain aspect ratio */
-            border: 1px solid purple; /* Default border */
+            margin: 0 10px; /* Space around the image */
+        }
+        .flex-container {
+            display: flex;
+            align-items: center; /* Vertically center items */
         }
         .nested {
             list-style: disc;
@@ -89,10 +91,6 @@
             .container {
                 padding: 15px;
                 box-shadow: none;
-            }
-            .dropdown select {
-                padding: 8px;
-                font-size: 16px;
             }
         }
         @media (min-width: 601px) {
@@ -141,17 +139,50 @@
 
             <h2>Funzioni del climatizzatore</h2>
             <ul>
-                <li><strong>Accensione/Spegnimento:</strong> premere il pulsante B1 
-                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Forno off" class="centered-image.small smartphone-image">
-                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Forno off per schermi più grandi" class="centered-image.small large-screen-image" style="display: none;"> 
-                    per attivare o disattivare il climatizzatore.</li>
-                <li><strong>Controllo della velocità del ventilatore:</strong> premere il tasto B2 per cambiare la velocità: Bassa > Media > Alta > Automatica.</li>
-                <li><strong>Modalità automatico:</strong> regola automaticamente la temperatura e la velocità della ventola. Premere il tasto B5 fino a visualizzare il simbolo D5.</li>
-                <li><strong>Modalità deumidificazione:</strong> deumidifica l'ambiente. premere il tasto B5 fino a visualizzare il simbolo D3 e la ventilazione minima D18.</li>
-                <li><strong>Modalità ventilazione:</strong> non agisce su temperatura o umidità. Premere il tasto B5 fino a visualizzare il simbolo della ventilazione minima D18.</li>
-                <li><strong>Modalità riscaldamento:</strong> riscalda l'ambiente. premere il tasto B5 fino a visualizzare il simbolo D1.</li>
-                <li><strong>Controllo del flusso d'aria:</strong> premere il tasto B4 per attivare/disattivare l’oscillazione continua del deflettore mobile.</li>
-                <li><strong>Funzione SILENT:</strong> riduce gradualmente la velocità del ventilatore. Premere il tasto B3 per attivare la funzione SILENT.</li>
+                <li class="flex-container">
+                    <strong>Accensione/Spegnimento:</strong> premere il pulsante B1
+                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Accensione/Spegnimento" class="small-image">
+                    per attivare o disattivare il climatizzatore.
+                </li>
+                <li class="flex-container">
+                    <strong>Controllo della velocità del ventilatore:</strong> premere il tasto B2
+                    <img src="../../images/dispositivi/condizionatore/b2.PNG" alt="Controllo velocità" class="small-image">
+                    per cambiare la velocità: Bassa > Media > Alta > Automatica.
+                </li>
+                <li class="flex-container">
+                    <strong>Modalità automatico:</strong> regola automaticamente la temperatura e la velocità della ventola. Premere il tasto B5
+                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità automatico" class="small-image">
+                    fino a visualizzare il simbolo D5
+                    <img src="../../images/dispositivi/condizionatore/d5.PNG" alt="Modalità automatico" class="small-image">.
+                </li>
+                <li class="flex-container">
+                    <strong>Modalità deumidificazione:</strong> deumidifica l'ambiente. Premere il tasto B5
+                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità deumidificazione" class="small-image">
+                    fino a visualizzare il simbolo D3 e la ventilazione minima D18
+                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Modalità automatico" class="small-image">.
+                </li>
+                <li class="flex-container">
+                    <strong>Modalità ventilazione:</strong> non agisce su temperatura o umidità. Premere il tasto B5
+                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità ventilazione" class="small-image">
+                    fino a visualizzare il simbolo della ventilazione minima D18
+                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Modalità automatico" class="small-image">.
+                </li>
+                <li class="flex-container">
+                    <strong>Modalità riscaldamento:</strong> riscalda l'ambiente. Premere il tasto B5
+                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità riscaldamento" class="small-image">
+                    fino a visualizzare il simbolo D1
+                    <img src="../../images/dispositivi/condizionatore/d1.PNG" alt="Modalità automatico" class="small-image">.
+                </li>
+                <li class="flex-container">
+                    <strong>Controllo del flusso d'aria:</strong> premere il tasto B4
+                    <img src="../../images/dispositivi/condizionatore/b4.PNG" alt="Controllo del flusso d'aria" class="small-image">
+                    per attivare/disattivare l’oscillazione continua del deflettore mobile.
+                </li>
+                <li class="flex-container">
+                    <strong>Funzione SILENT:</strong> riduce gradualmente la velocità del ventilatore. Premere il tasto B3
+                    <img src="../../images/dispositivi/condizionatore/b3.PNG" alt="Funzione SILENT" class="small-image">
+                    per attivare la funzione SILENT.
+                </li>
             </ul>
 
             <h2>Consigli per il risparmio energetico</h2>
@@ -162,11 +193,18 @@
 
             <h2>Diagnosi e allarmi</h2>
             <ul>
-                <li><strong>LED A:</strong> pulizia del filtro necessaria.</li>
-                <li><strong>LED B:</strong> alta temperatura batteria.</li>
-                <li><strong>LED A + C lampeggianti:</strong> funzionamento continuo pompa.</li>
-                <img src="../../images/dispositivi/condizionatore/condizionatore.led.png" alt="Display condizionatore2" class="centered-image smartphone-image">
-                <img src="../../images/dispositivi/condizionatore/condizionatore.led.png" alt="Display condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;">
+                <li class="flex-container">
+                    <strong>LED A:</strong> pulizia del filtro necessaria.
+                    <img src="../../images/dispositivi/condizionatore/led-a.PNG" alt="LED A" class="small-image">
+                </li>
+                <li class="flex-container">
+                    <strong>LED B:</strong> alta temperatura batteria.
+                    <img src="../../images/dispositivi/condizionatore/led-b.PNG" alt="LED B" class="small-image">
+                </li>
+                <li class="flex-container">
+                    <strong>LED A + C lampeggianti:</strong> funzionamento continuo pompa.
+                    <img src="../../images/dispositivi/condizionatore/led-ac.PNG" alt="LED A + C" class="small-image">
+                </li>
             </ul> 
 
             <h2>Avvertenze generali</h2>
@@ -182,7 +220,6 @@
                 <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Documentazione</a>
             </div>
         </div>
-            
     </div>
 
     <script>
@@ -205,6 +242,5 @@
             }
         }
     </script>
-    
 </body>
 </html>
