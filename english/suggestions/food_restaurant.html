@@ -1,1 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typical products and restaurants</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+        p { 
+            text-align: center; /* Center the paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Typical products and restaurants</h1>
+            <p>Florence is a city rich in culinary traditions. From typical dishes to recommended restaurants, 
+                here you will find a brief guide to the best of the local gastronomy.</p>
+            <hr>
+            
+            <h2>Bistecca alla Fiorentina</h2>
+            <ul class="top-level">
+                <li>A special icon of Florence, Bistecca alla Fiorentina is a succulent beef steak, expertly grilled. 
+                    This cut of meat, thick and flavorful, is generally served rare to retain all its juiciness. 
+                    It is a must for any meat lover visiting Florence.</li>
+
+                <!--<img src="../../images/cibo/bistecca.PNG" alt="Bistecca alla Fiorentina" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/bistecca.601px.PNG" alt="Bistecca alla Fiorentina for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Schiacciata</h2>
+            <ul class="top-level">
+                <li>Schiacciata is a typical Tuscan bread, crunchy on the outside and soft on the inside. 
+                    Perfect for stuffing with cold cuts, cheeses, or vegetables, it is an ideal choice for a quick and tasty snack. 
+                    You can find it in many local bakeries, freshly baked and still warm.</li>
+
+                <!--<img src="../../images/cibo/schiacciata.PNG" alt="Schiacciata" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/schiacciata.601px.PNG" alt="Schiacciata for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Lampredotto</h2>
+            <ul class="top-level">
+                <li>Lampredotto is a typical Florentine street food dish, prepared with a part of the cow's stomach. 
+                    Served in a sandwich and seasoned with green sauce or spicy sauce, it is a unique culinary experience not to be missed. 
+                    You will find it in traditional street food trucks in some squares and streets of Florence.</li>
+
+                <!--<img src="../../images/cibo/lampredotto.PNG" alt="Lampredotto" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/lampredotto.601px.PNG" alt="Lampredotto for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Ribollita</h2>
+            <ul class="top-level">
+                <li>Ribollita is a rustic soup typical of Tuscan cuisine, made with stale bread, beans, and vegetables. 
+                    This dish, with its rich and comforting flavor, represents the simplicity and genuineness of the Tuscan peasant tradition. 
+                    Perfect for warming up during the winter months.</li>
+
+                <!--<img src="../../images/cibo/ribollita.PNG" alt="Ribollita" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/ribollita.601px.PNG" alt="Ribollita for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Wine</h2>
+            <ul class="top-level">
+                <li>Tuscany is famous for its fine wines such as Chianti, Brunello di Montalcino, and Vino Nobile di Montepulciano. 
+                    These wines, with their unique and complex character, are the perfect accompaniment for traditional Tuscan dishes.</li>
+
+                <!--<img src="../../images/cibo/vino.PNG" alt="Wine" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/vino.601px.PNG" alt="Wine for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Vin Santo</h2>
+            <ul class="top-level">
+                <li>Vin Santo is a typical Tuscan dessert wine, sweet and aromatic, often served with cantucci, the traditional almond biscuits. 
+                    This pairing represents the perfect closure for a typical Tuscan meal.</li>
+ 
+                <!--<img src="../../images/cibo/vinosanto.PNG" alt="Vin Santo" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/cibo/vinosanto.601px.PNG" alt="Vin Santo for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+
+            <h2>Central Market (Mercato Centrale)</h2>
+            <ul class="top-level">
+                <li>The Central Market is a lively covered market in the heart of Florence. 
+                    Here you can find fresh local products, cheeses, cold cuts, and a variety of typical Tuscan specialties. 
+                    Additionally, the market offers numerous food stalls where you can savor traditional dishes prepared on the spot.</li>
+                <img src="../../images/transports/agli-mercato.601px.png" alt="Central Market" class="centered-image smartphone-image">
+                <img src="../../images/transports/agli-mercato.png" alt="Central Market for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Diladdarno restaurant</h2>
+            <ul class="top-level">
+                <li>Ristorante Diladdarno, located in the Oltrarno area, offers an authentic culinary experience with typical Florentine traditional dishes. 
+                    With a cozy atmosphere and friendly service, it is the ideal place to enjoy a quiet and delicious meal after a day of exploration.</li>
+                <li></li>
+                <a href="https://www.trattoriadiladdarno.com/english-menu-1/">Ristorante Diladdarno</a>
+                </ul>
+            <hr>
+
+            <h2>Ristorante Banco a Ristoro</h2>
+            <ul class="top-level">
+                <li>If you have a car and want to explore the surrounding areas of Florence,
+                    Ristorante Banco a Ristoro, located just outside Florence, in Molino del Piano,
+                    offers innovative cuisine that enhances fresh and high-quality traditional ingredients.
+                    Enrich your experience by visiting nearby places of interest,
+                    such as the suggestive Castello del Trebbio, the characteristic Mulino a Vento di Monterifrassine, and the renowned Castello di Nipozzano.
+                    These locations are famous for their beautiful landscapes, historical significance,
+                    and production of excellent wines and products.
+                </li>
+                <li></li>
+                <a href="https://bancoaristoro.it/en">Ristorante Banco a Ristoro</a></ul>
+            <hr>
+
+            <h2>Local Festivals (Sagre)</h2>
+            <ul class="top-level">
+                <li>If you have a car and want to explore the surrounding areas of Florence,
+                    participating in typical festive gatherings of Tuscan towns,
+                    the festivals offer a perfect opportunity. These seasonal traditional festivals, locally known as Sagra,
+                    celebrate local products such as truffles, game meat, olive oil, and many other typical dishes and products.
+                    They offer a unique chance to taste regional specialties in a festive atmosphere,
+                    with events varying throughout the year in different locations of Tuscany and the province of Florence. 
+                    Discover local festivals on these sites:</li>
+                <li></li>
+                <li><a href="https://www.sagretoscane.com/sagre/fi/">Festivals in the province of Florence</a></li>
+                <li><a href="https://www.firenzetoday.it/eventi/tipo/sagre/">Festivals Firenze Today</a></li>
+                <!--<img src="../../images/transports/sagre.PNG" alt="Festivals" class="centered-image smartphone-image">-->
+                <!--<img src="../../images/transports/sagre.601px.PNG" alt="Festivals for larger screens" class="centered-image large-screen-image" style="display: none;">-->
+            </ul>
+            <hr>
+            
+            <h2>Notes</h2>
+            <ul class="top-level">
+                <li>Placeholder text.</li>
+            </ul>
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/consigli/index.html" class="button">Advice</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach img => {
+                img.style.display = 'block';
+            });
+        }
+
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
