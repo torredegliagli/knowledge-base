@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Washer-Dryer instructions</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* full height minus padding */
+            overflow-y: auto; /* enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* changed to purple */
+            border: 2px solid black; /* black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* maintain aspect ratio */
+            border: 1px solid purple; /* default border */
+        }
+        .inline-image {
+            vertical-align: middle;
+            width: 25px;  /* Smaller size for images */
+            height: auto;
+            margin-left: 5px; /* Space to the left of the image */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Washer-Dryer instructions</h1>
+
+            <h2>Safety</h2>
+            <ul>
+                <li>Do not use the appliance if the surface is damaged.</li>
+                <li>Do not place objects on the washer-dryer.</li>
+                <li>Monitor the washing and drying process, especially with children present.</li>
+            </ul>
+          
+            <h2>How to use the washer-dryer</h2>
+            <ul>
+                <li><strong>Program selection:</strong> select the desired program using the <strong>A</strong> knob.</li>
+                    <ul class="nested">
+                        <li>The washer-dryer has three distinct working methods: <strong>washing</strong>, 
+                        <strong>drying</strong>, and <strong>automatic washing and drying</strong>.
+                        For a more detailed description of the programs, refer to the program paragraphs.</li>
+                    </ul>
+                <li><strong>Setting adjustments:</strong> if necessary, adjust the temperature 
+                    and the spin on the display by pressing the <strong>F</strong> and <strong>G</strong> buttons.</li>
+                <li><strong>Detergent:</strong> put the detergent in the <strong>left compartment</strong> and the fabric softener, if used, in the central one. 
+                    The right compartment should be filled only when using pre-wash programs, leaving the left compartment empty.</li>
+                <li><strong>Start:</strong> press the <strong>B</strong> power button for about 1 second.</li>
+                <li><strong>Stop:</strong> when the cycle is finished, turn the knob to <strong>OFF</strong> to open the door.</li>
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.display2.PNG" alt="Washer-Dryer" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.display.newPNG.PNG" alt="Washer-Dryer" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.display2.PNG" alt="Washer-Dryer for larger screens" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.display.newPNG.PNG" alt="Washer-Dryer for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+          
+            <h2>Washing programs</h2>
+            <ul>
+                <li>By selecting one of these programs using the knob, you will activate a program that provides a <strong>washing-only cycle</strong>. 
+                    The drying can be selected afterwards and can be done manually, 
+                    when the washing cycle is finished, by selecting a drying program using the knob, 
+                    or it can be done automatically by pressing the <strong>D</strong> button on the washer-dryer display, 
+                    after selecting a washing program.</li>
+                <li><strong>Cotton:</strong> for resistant cotton laundry. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.cotone.PNG" alt="Cotton function" class="inline-image"></li>
+                <li><strong>Eco 40-60:</strong> for normally soiled cotton laundry. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.eco40.60.PNG" alt="Eco function" class="inline-image"></li>
+                <li><strong>Synthetics:</strong> for synthetic fabric laundry. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.sintetici.PNG" alt="Synthetics function" class="inline-image"></li>
+            </ul>
+
+            <h2>Quick wash programs</h2>
+            <ul>
+                <li>By selecting one of these programs using the knob, you will activate a program that provides a <strong>quick wash-only cycle</strong>. 
+                    The drying can be selected afterwards and can be done manually, 
+                    by selecting a drying program using the knob when the washing cycle is finished, 
+                    or it can be done automatically by pressing the <strong>D</strong> button on the washer-dryer display, 
+                    after selecting any washing program.</li>
+                <li><strong>Quick 13'/30'/44':</strong> washing suitable for all types of fabric. 
+                    Recommended for small loads and lightly soiled garments. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.rapido.PNG" alt="Quick function" class="inline-image">. 
+                    Press the <strong>E</strong> button on the washer-dryer display to change the washing duration.</li>
+                <li><strong>Mixed and colored 59':</strong> for mixed fabrics of different colors that are not too dirty. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.lavasciuga.misti.PNG" alt="Mixed and colored function" class="inline-image"></li>
+                <li><strong>Cotton 59':</strong> for medium soiled cotton garments. 
+                    For the best results, half load is recommended. 
+                    <img src="../../images/dispositivi/lavasciuga/funz.lavasciuga.cotone.PNG" alt="Cotton 59' function" class="inline-image"></li>
+                <li><strong>Special 49':</strong> ensures high washing performance at medium temperature in just 49 minutes. 
+                    For the best results, half load is recommended.  
+                    <img src="../../images/dispositivi/lavasciuga/funz.lavasciuga.rapido.PNG" alt="Special 49' function" class="inline-image"></li>
+            </ul>
+
+            <h2>Drying programs</h2>
+            <ul>
+                <li>By selecting one of these programs using the knob, you will activate a program that provides a <strong>drying-only cycle</strong>. 
+                Use this program after a washing program to dry your clothes.
+                Choose the program and the desired drying level, as explained below.</li>
+                
+                <li>Select the drying program using the knob:
+                    <ul class="nested">
+                        <li><strong>Wool:</strong> low-temperature drying, ideal for drying woolen garments. 
+                            It is recommended to turn the garments inside out before drying them. 
+                            <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.lana.PNG" alt="Wool drying function" class="inline-image"></li>
+                        <li><strong>Mixed:</strong> low-temperature drying, recommended for mixed and synthetic fabrics.</li>
+                            <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.misti.PNG" alt="Mixed drying function" class="inline-image"></li>
+                        <li><strong>Cotton:</strong> high-temperature drying, recommended for cotton, sponge, linen, hemp fabrics.
+                            <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.cotone.PNG" alt="Cotton drying function" class="inline-image"></li>
+                    </ul>
+                <li>Select the drying level, or timed drying, by pressing the <strong>D</strong> button on the washer-dryer display, 
+                    until you see the desired drying level appear on the display:</li>
+                    <ul class="nested">
+                        <li><strong>Extra dry:</strong> recommended for sponges, bathrobes, and bulky loads.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.asciutto.PNG" alt="Extra dry level" class="inline-image"></li>
+                        <li><strong>Iron ready:</strong> leaves laundry ready for ironing.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.stiro.PNG" alt="Iron ready level" class="inline-image"></li>
+                        <li><strong>Wardrobe:</strong> for garments that do not need ironing.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.armadio.PNG" alt="Wardrobe level" class="inline-image"></li>
+                        <li><strong>Time:</strong> 120'/90'/60'/30'.</li>
+                    </ul>
+            </ul>
+
+            <h2>Washing and drying programs</h2>
+            <ul>
+                <li>To perform a washing and drying cycle automatically, select a washing or quick wash program and 
+                    press the <strong>D</strong> button on the washer-dryer display to select the desired drying level.</li>
+                <li><strong>Washing program selection:</strong> choose the washing program using the knob.</li>
+                <li><strong>Drying level:</strong> select the drying level, or timed drying, 
+                    by pressing the <strong>D</strong> button on the washer-dryer display, until you see the desired drying level appear on the display:</li>
+                    <ul class="nested">
+                        <li><strong>Extra dry:</strong> recommended for sponges, bathrobes, and bulky loads.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.asciutto.PNG" alt="Extra dry level" class="inline-image"></li>
+                        <li><strong>Iron ready:</strong> leaves laundry ready for ironing.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.stiro.PNG" alt="Iron ready level" class="inline-image"></li>
+                        <li><strong>Wardrobe:</strong> for garments that do not need ironing.
+                            <img src="../../images/dispositivi/lavasciuga/lavasciuga.armadio.PNG" alt="Wardrobe level" class="inline-image"></li>
+                        <li><strong>Time:</strong> 120'/90'/60'/30'.</li></li>
+            </ul>
+
+            <h2>Special functions</h2>
+            <ul>
+                <li><strong>Soil level:</strong> this option allows you to choose between three washing intensity levels,
+                    depending on the degree of soil of the fabrics, modifying the duration of the selected program 
+                    (can only be used in certain programs, as indicated in the program table).</li>
+                    
+                <li>To use this function, press the <strong>E</strong> button on the washer-dryer display, 
+                    after selecting a washing program, until you see the desired drying level appear on the display.</li>
+                <li><strong>Child lock:</strong> press the <strong>F</strong> and <strong>G</strong> buttons simultaneously for about 3 seconds.</li>
+            </ul>
+
+            <h2>Program table</h2>    
+            <ul>
+              <img src="../../images/dispositivi/lavasciuga/lavasciuga.programmi.PNG" alt="Washer-Dryer programs" class="centered-image smartphone-image">
+              <img src="../../images/dispositivi/lavasciuga/lavasciuga.programmi.PNG" alt="Washer-Dryer programs for larger screens" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <p>If you encounter any problems, contact the host, Alessandro.</p>
+
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/english/devices_instructions/index.html" class="button">Instructions</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
