@@ -44,15 +44,6 @@
         }
         li { 
             margin: 10px 0; 
-            display: flex;
-            align-items: center;
-        }
-        li::before {
-            content: "•"; /* Bullet point */
-            color: purple; /* Bullet color */
-            display: inline-block; 
-            width: 1em; /* Width of the bullet */
-            margin-left: -1em; /* Position bullet outside */
         }
         .button-container { 
             text-align: center; 
@@ -79,18 +70,16 @@
             height: auto; /* Maintain aspect ratio */
             border: 1px solid purple; /* Default border */
         }
-        .small-image {
-            width: 30px; /* Adjust size as needed */
+        .centered-image.small {
+            display: block;
+            margin: 10px auto;
+            width: 50%;
             height: auto; /* Maintain aspect ratio */
-            margin: 0 10px; /* Space around the image */
+            border: 1px solid purple; /* Default border */
         }
         .nested {
             list-style: disc;
             padding-left: 20px;
-        }
-        .flex-container {
-            display: flex;
-            align-items: center;
         }
         @media (max-width: 600px) {
             body {
@@ -100,6 +89,10 @@
             .container {
                 padding: 15px;
                 box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
             }
         }
         @media (min-width: 601px) {
@@ -124,72 +117,41 @@
 
             <h2>Descrizione del telecomando (Camera)</h2>
             <ul>
-                <li><img src="../../images/dispositivi/condizionatore/Telecomando2.PNG" alt="Telecomando condizionatore" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/Telecomando.PNG" alt="Telecomando condizionatore2" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/telecomando.601px.PNG" alt="Telecomando condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;"></li>
+                <img src="../../images/dispositivi/condizionatore/Telecomando2.PNG" alt="Telecomando condizionatore" class="centered-image smartphone-image">
+                <br>
+                <img src="../../images/dispositivi/condizionatore/Telecomando.PNG" alt="Telecomando condizionatore2" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/telecomando.601px.PNG" alt="Telecomando condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;">
             </ul>
 
             <h2>Descrizione del telecomando (Salotto)</h2>
             <ul>
-                <li><img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto1.png" alt="Telecomando condizionatore" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto2.png" alt="Telecomando condizionatore2" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto601px.png" alt="Telecomando condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;"></li>
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto1.png" alt="Telecomando condizionatore" class="centered-image smartphone-image">
+                <br>
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto2.png" alt="Telecomando condizionatore2" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto601px.png" alt="Telecomando condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;">
             </ul>
 
             <h2>Descrizione del display telecomando</h2>
             <ul>
-                <li><img src="../../images/dispositivi/condizionatore/display.condizionatore.2.PNG" alt="Display condizionatore" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/display.condizionatore.PNG" alt="Display condizionatore2" class="centered-image smartphone-image"></li>
-                <li><img src="../../images/dispositivi/condizionatore/display.condizionatore.601px.PNG" alt="Display condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;"></li>
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.2.PNG" alt="Display condizionatore" class="centered-image smartphone-image">
+                <br>
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.PNG" alt="Display condizionatore2" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.601px.PNG" alt="Display condizionatore for larger screens" class="centered-image large-screen-image" style="display: none;">
             </ul>
 
             <h2>Funzioni del climatizzatore</h2>
             <ul>
-                <li class="flex-container">
-                    <span><strong>Accensione/Spegnimento:</strong> premere il pulsante B1</span>
-                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Accensione/Spegnimento" class="small-image">
-                    <span>per attivare o disattivare il climatizzatore.</span>
-                </li>
-                <li class="flex-container">
-                    <span><strong>Controllo della velocità del ventilatore:</strong> premere il tasto B2</span>
-                    <img src="../../images/dispositivi/condizionatore/b2.PNG" alt="Controllo velocità" class="small-image">
-                    <span>per cambiare la velocità: Bassa > Media > Alta > Automatica.</span>
-                </li>
-                <li class="flex-container">
-                    <span><strong>Modalità automatico:</strong> regola automaticamente la temperatura e la velocità della ventola. Premere il tasto B5</span>
-                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità automatico" class="small-image">
-                    <span>fino a visualizzare il simbolo D5</span>
-                    <img src="../../images/dispositivi/condizionatore/d5.PNG" alt="Simbolo D5" class="small-image">.
-                </li>
-                <li class="flex-container">
-                    <span><strong>Modalità deumidificazione:</strong> deumidifica l'ambiente. Premere il tasto B5</span>
-                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità deumidificazione" class="small-image">
-                    <span>fino a visualizzare il simbolo D3 e la ventilazione minima D18</span>
-                    <img src="../../images/dispositivi/condizionatore/d3.PNG" alt="Simbolo D3" class="small-image">
-                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Simbolo D18" class="small-image">.
-                </li>
-                <li class="flex-container">
-                    <span><strong>Modalità ventilazione:</strong> non agisce su temperatura o umidità. Premere il tasto B5</span>
-                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità ventilazione" class="small-image">
-                    <span>fino a visualizzare il simbolo della ventilazione minima D18</span>
-                    <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Simbolo D18" class="small-image">.
-                </li>
-                <li class="flex-container">
-                    <span><strong>Modalità riscaldamento:</strong> riscalda l'ambiente. Premere il tasto B5</span>
-                    <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Modalità riscaldamento" class="small-image">
-                    <span>fino a visualizzare il simbolo D1</span>
-                    <img src="../../images/dispositivi/condizionatore/d1.PNG" alt="Simbolo D1" class="small-image">.
-                </li>
-                <li class="flex-container">
-                    <span><strong>Controllo del flusso d'aria:</strong> premere il tasto B4</span>
-                    <img src="../../images/dispositivi/condizionatore/b4.PNG" alt="Controllo del flusso d'aria" class="small-image">
-                    <span>per attivare/disattivare l’oscillazione continua del deflettore mobile.</span>
-                </li>
-                <li class="flex-container">
-                    <span><strong>Funzione SILENT:</strong> riduce gradualmente la velocità del ventilatore. Premere il tasto B3</span>
-                    <img src="../../images/dispositivi/condizionatore/b3.PNG" alt="Funzione SILENT" class="small-image">
-                    <span>per attivare la funzione SILENT.</span>
-                </li>
+                <li><strong>Accensione/Spegnimento:</strong> premere il pulsante B1 
+                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Forno off" class="centered-image.small smartphone-image">
+                    <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="Forno off per schermi più grandi" class="centered-image.small large-screen-image" style="display: none;"> 
+                    per attivare o disattivare il climatizzatore.</li>
+                <li><strong>Controllo della velocità del ventilatore:</strong> premere il tasto B2 per cambiare la velocità: Bassa > Media > Alta > Automatica.</li>
+                <li><strong>Modalità automatico:</strong> regola automaticamente la temperatura e la velocità della ventola. Premere il tasto B5 fino a visualizzare il simbolo D5.</li>
+                <li><strong>Modalità deumidificazione:</strong> deumidifica l'ambiente. premere il tasto B5 fino a visualizzare il simbolo D3 e la ventilazione minima D18.</li>
+                <li><strong>Modalità ventilazione:</strong> non agisce su temperatura o umidità. Premere il tasto B5 fino a visualizzare il simbolo della ventilazione minima D18.</li>
+                <li><strong>Modalità riscaldamento:</strong> riscalda l'ambiente. premere il tasto B5 fino a visualizzare il simbolo D1.</li>
+                <li><strong>Controllo del flusso d'aria:</strong> premere il tasto B4 per attivare/disattivare l’oscillazione continua del deflettore mobile.</li>
+                <li><strong>Funzione SILENT:</strong> riduce gradualmente la velocità del ventilatore. Premere il tasto B3 per attivare la funzione SILENT.</li>
             </ul>
 
             <h2>Consigli per il risparmio energetico</h2>
@@ -220,6 +182,7 @@
                 <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Documentazione</a>
             </div>
         </div>
+            
     </div>
 
     <script>
@@ -242,5 +205,6 @@
             }
         }
     </script>
+    
 </body>
 </html>
