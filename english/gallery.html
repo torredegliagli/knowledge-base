@@ -78,6 +78,7 @@
             background-color: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
+            z-index: 1000;
         }
         .lightbox img {
             max-width: 90%;
@@ -85,6 +86,21 @@
         }
         .lightbox:target {
             display: flex;
+        }
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .lightbox-nav button {
+            background-color: transparent;
+            border: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
         }
         @media (max-width: 600px) {
             body {
@@ -111,67 +127,29 @@
         <div class="container">
             <h1>The house</h1>
             <div class="gallery">
-                <a href="#lightbox1"><img src="../images/casa/Casa Novoli-1.jpg" alt="Photo 1"></a>
-                <a href="#lightbox2"><img src="../images/casa/Casa Novoli-2.jpg" alt="Photo 2"></a>
-                <a href="#lightbox3"><img src="../images/casa/Casa Novoli-3.jpg" alt="Photo 3"></a>
-                <a href="#lightbox4"><img src="../images/casa/Casa Novoli-4.jpg" alt="Photo 4"></a>
-                <a href="#lightbox5"><img src="../images/casa/Casa Novoli-5.jpg" alt="Photo 5"></a>
-                <a href="#lightbox6"><img src="../images/casa/Casa Novoli-6.jpg" alt="Photo 6"></a>
-                <a href="#lightbox7"><img src="../images/casa/Casa Novoli-7.jpg" alt="Photo 7"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-8.jpg" alt="Photo 8"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-9.jpg" alt="Photo 9"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-10.jpg" alt="Photo 10"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-11.jpg" alt="Photo 11"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-14.jpg" alt="Photo 12"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-15.jpg" alt="Photo 15"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-16.jpg" alt="Photo 16"></a>
-                <a href="#lightbox8"><img src="../images/casa/Casa Novoli-18.jpg" alt="Photo 18"></a>
+                <a href="#lightbox1" data-index="0"><img src="../images/casa/Casa Novoli-1.jpg" alt="Photo 1"></a>
+                <a href="#lightbox2" data-index="1"><img src="../images/casa/Casa Novoli-2.jpg" alt="Photo 2"></a>
+                <a href="#lightbox3" data-index="2"><img src="../images/casa/Casa Novoli-3.jpg" alt="Photo 3"></a>
+                <a href="#lightbox4" data-index="3"><img src="../images/casa/Casa Novoli-4.jpg" alt="Photo 4"></a>
+                <a href="#lightbox5" data-index="4"><img src="../images/casa/Casa Novoli-5.jpg" alt="Photo 5"></a>
+                <a href="#lightbox6" data-index="5"><img src="../images/casa/Casa Novoli-6.jpg" alt="Photo 6"></a>
+                <a href="#lightbox7" data-index="6"><img src="../images/casa/Casa Novoli-7.jpg" alt="Photo 7"></a>
+                <a href="#lightbox8" data-index="7"><img src="../images/casa/Casa Novoli-8.jpg" alt="Photo 8"></a>
+                <a href="#lightbox9" data-index="8"><img src="../images/casa/Casa Novoli-9.jpg" alt="Photo 9"></a>
+                <a href="#lightbox10" data-index="9"><img src="../images/casa/Casa Novoli-10.jpg" alt="Photo 10"></a>
+                <a href="#lightbox11" data-index="10"><img src="../images/casa/Casa Novoli-11.jpg" alt="Photo 11"></a>
+                <a href="#lightbox12" data-index="11"><img src="../images/casa/Casa Novoli-14.jpg" alt="Photo 12"></a>
+                <a href="#lightbox13" data-index="12"><img src="../images/casa/Casa Novoli-15.jpg" alt="Photo 13"></a>
+                <a href="#lightbox14" data-index="13"><img src="../images/casa/Casa Novoli-16.jpg" alt="Photo 14"></a>
+                <a href="#lightbox15" data-index="14"><img src="../images/casa/Casa Novoli-18.jpg" alt="Photo 15"></a>
             </div>
 
-            <div id="lightbox1" class="lightbox">
-                <img src="../images/casa/Casa Novoli-1.jpg" alt="Photo 1">
-            </div>
-            <div id="lightbox2" class="lightbox">
-                <img src="../images/casa/Casa Novoli-2.jpg" alt="Photo 2">
-            </div>
-            <div id="lightbox3" class="lightbox">
-                <img src="../images/casa/Casa Novoli-3.jpg" alt="Photo 3">
-            </div>
-            <div id="lightbox4" class="lightbox">
-                <img src="../images/casa/Casa Novoli-4.jpg" alt="Photo 4">
-            </div>
-            <div id="lightbox5" class="lightbox">
-                <img src="../images/casa/Casa Novoli-5.jpg" alt="Photo 5">
-            </div>
-            <div id="lightbox6" class="lightbox">
-                <img src="../images/casa/Casa Novoli-6.jpg" alt="Photo 6">
-            </div>
-            <div id="lightbox7" class="lightbox">
-                <img src="../images/casa/Casa Novoli-7.jpg" alt="Photo 7">
-            </div>
-            <div id="lightbox8" class="lightbox">
-                <img src="../images/casa/Casa Novoli-8.jpg" alt="Photo 8">
-            </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-89.jpg" alt="Photo 9">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-10.jpg" alt="Photo 10">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-11.jpg" alt="Photo 11">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-14.jpg" alt="Photo 14">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-15.jpg" alt="Photo 15">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                  <img src="../images/casa/Casa Novoli-16.jpg" alt="Photo 16">
-              </div>
-            <div id="lightbox8" class="lightbox">
-                <img src="../images/casa/Casa Novoli-18.jpg" alt="Photo 18">
+            <div id="lightbox" class="lightbox">
+                <div class="lightbox-nav">
+                    <button id="prev-btn">&lsaquo;</button>
+                    <button id="next-btn">&rsaquo;</button>
+                </div>
+                <img id="lightbox-img" src="" alt="Lightbox Image">
             </div>
 
             <div class="button-container">
@@ -181,6 +159,36 @@
     </div>
     
     <script>
+        const galleryImages = document.querySelectorAll('.gallery a');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        let currentImageIndex;
+
+        galleryImages.forEach((link, index) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                currentImageIndex = index;
+                lightboxImg.src = link.querySelector('img').src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentImageIndex].querySelector('img').src;
+        });
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentImageIndex].querySelector('img').src;
+        });
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox || event.target === lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+
         function redirectToFolder(selectId) {
             var select = document.getElementById(selectId);
             var value = select.value;
