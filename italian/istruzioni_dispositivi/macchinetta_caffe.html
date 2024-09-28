@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istruzioni macchinetta del caffè</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* full height minus padding */
+            overflow-y: auto; /* enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* changed to purple */
+            border: 2px solid black; /* black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* maintain aspect ratio */
+            border: 1px solid purple; /* default border */
+        }
+
+        .inline-image {
+            vertical-align: middle;
+            width: 25px;  /* Dimensione ridotta per le immagini */
+            height: auto;
+            margin-left: 5px; /* Spazio a sinistra dell'immagine */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Istruzioni macchinetta del caffè</h1>
+
+            <h2>Preparazione</h2>
+            <ul>
+                <li>Sciacquare e riempire il serbatoio con acqua potabile.</li>
+                <li>Accendere la macchina premendo il pulsante <strong>Espresso</strong> o <strong>Lungo</strong>. 
+                    <img src="../../images/dispositivi/caffe/corto.lungo.PNG" alt="Macchinetta caffè pulsante Espresso/Lungo'" class="inline-image">
+                    Le luci lampeggeranno durante il riscaldamento (circa 25 secondi) e saranno fisse quando la macchina è pronta.</li>
+            </ul>
+
+            <h2>Fare il caffè</h2>
+            <ul>
+                <li>Sollevare la leva e inserire una capsula Nespresso.
+                    <img src="../../images/dispositivi/caffe/caffe.capsula.PNG" alt="Inserimento capsula'" class="inline-image">
+                </li>
+                <li>Chiudere la leva completamente e posizionare una tazzina sotto l'erogatore.
+                    <img src="../../images/dispositivi/caffe/caffe.leva.PNG" alt="Chiusura leva e posizionamento tazzina'" class="inline-image">
+                </li>
+                <li>Premere il pulsante <strong>Espresso</strong> (40 ml) o <strong>Lungo</strong> (110 ml).
+                    <img src="../../images/dispositivi/caffe/corto.lungo.PNG" alt="Erogazione caffè'" class="inline-image"> 
+                    Il caffè verrà erogato automaticamente. È possibile fermare o aumentare l'erogazione premendo nuovamente il pulsante Espresso/Lungo.</li>
+            </ul>
+
+            <h2>Rimozione della capsula</h2>
+            <ul>
+                <li>Sollevare e chiudere la leva per espellere la capsula usata nel contenitore delle capsule.
+                    <img src="../../images/dispositivi/caffe/caffe.finish.PNG" alt="Completamento operazione'" class="inline-image">                    
+                </li>
+            </ul>
+
+            <h2>Precauzioni di sicurezza</h2>
+            <ul>
+                <li>Non sollevare la leva durante l'erogazione del caffè.</li>
+                <li>Non inserire le dita sotto l'erogatore o nello spazio delle capsule.</li>
+                <li>Usare solo acqua potabile e non lasciare acqua nel serbatoio per più di due giorni.</li>
+                <li>Spegnere la macchina premendo contemporaneamente i pulsanti <strong>Espresso</strong> e <strong>Lungo</strong>.</li>
+            </ul>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Istruzioni</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
