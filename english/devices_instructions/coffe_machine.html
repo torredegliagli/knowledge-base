@@ -70,18 +70,16 @@
             height: auto; /* maintain aspect ratio */
             border: 1px solid purple; /* default border */
         }
-
         .inline-image {
             vertical-align: middle;
-            width: 25px;  /* Reduced image size */
+            width: 25px;  /* Smaller size for images */
             height: auto;
-            margin-left: 5px; /* Space on the left of the image */
+            margin-left: 5px; /* Space to the left of the image */
         }
         .nested {
             list-style: disc;
             padding-left: 20px;
         }
-
         @media (max-width: 600px) {
             body {
                 background-size: auto;
@@ -90,6 +88,10 @@
             .container {
                 padding: 15px;
                 box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
             }
         }
         @media (min-width: 601px) {
@@ -107,29 +109,28 @@
             <h2>Preparation</h2>
             <ul>
                 <li>Rinse and fill the water tank with drinking water.</li>
-                <li>Turn on the machine by pressing the <strong>Espresso</strong> or <strong>Lungo</strong> button. 
-                    <img src="../../images/dispositivi/caffe/corto.lungo.PNG" alt="Coffee machine Espresso/Lungo button" class="inline-image">
-                    The lights will blink while heating (about 25 seconds) and stay steady when the machine is ready.</li>
+                <li>Turn on the machine by pressing the <strong>Espresso</strong> or <strong>Lungo</strong> button.</li> 
+                    <img src="../../images/dispositivi/caffe/caffe.corto.lungo.PNG" alt="Coffee machine Espresso/Lungo button" class="centered-image">
+                <li>The lights will blink while heating (about 25 seconds) and stay steady when the machine is ready.</li>
             </ul>
 
             <h2>Making coffee</h2>
             <ul>
-                <li>Lift the lever and insert a Nespresso capsule.
-                    <img src="../../images/dispositivi/caffe/caffe.capsula.PNG" alt="Capsule insertion" class="inline-image">
-                </li>
-                <li>Close the lever completely and place a cup under the dispenser.
-                    <img src="../../images/dispositivi/caffe/caffe.leva.PNG" alt="Lever closure and cup placement" class="inline-image">
-                </li>
-                <li>Press the <strong>Espresso</strong> (40 ml) or <strong>Lungo</strong> (110 ml) button.
-                    <img src="../../images/dispositivi/caffe/corto.lungo.PNG" alt="Coffee dispensing" class="inline-image"> 
-                    The coffee will be dispensed automatically. You can stop or increase the dispensing by pressing the Espresso/Lungo button again.</li>
+                <li>Lift the lever and insert a Nespresso capsule.</li>
+                    <img src="../../images/dispositivi/caffe/caffe.capsula.PNG" alt="Capsule insertion" class="centered-image">
+                
+                <li>Close the lever completely and place a cup under the dispenser.</li>
+                    <img src="../../images/dispositivi/caffe/caffe.leva.PNG" alt="Lever closure and cup placement" class="centered-image">
+                
+                <li>Press the <strong>Espresso</strong> (40 ml) or <strong>Lungo</strong> (110 ml) button.</li>
+                    <img src="../../images/dispositivi/caffe/caffe.corto.lungo.PNG" alt="Coffee dispensing" class="centered-image"> 
+                <li>The coffee will be dispensed automatically. You can stop or increase the dispensing by pressing the Espresso/Lungo button again.</li>
             </ul>
 
             <h2>Removing the capsule</h2>
             <ul>
-                <li>Lift and close the lever to eject the used capsule into the capsule container.
-                    <img src="../../images/dispositivi/caffe/caffe.finish.PNG" alt="Operation completion" class="inline-image">                    
-                </li>
+                <li>Lift and close the lever to eject the used capsule into the capsule container.</li>
+                    <img src="../../images/dispositivi/caffe/caffe.finish.PNG" alt="Operation completion" class="centered-image">                    
             </ul>
 
             <h2>Safety precautions</h2>
@@ -156,6 +157,14 @@
             document.querySelectorAll('.large-screen-image').forEach(img => {
                 img.style.display = 'block';
             });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
         }
     </script>
 </body>
