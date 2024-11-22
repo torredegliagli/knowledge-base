@@ -10,13 +10,13 @@
             margin: 0;
         }
         body { 
-            font-family: Arial, sans-serif; 
-            background-color: #f4f4f4; 
-            background-image: url('../images/florence3.jpeg'); 
-            background-size: cover; 
-            background-repeat: no-repeat; 
-            background-attachment: fixed; 
-            padding: 20px; 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
             overflow: hidden; /* Prevent scrolling on the body */
         }
         .scrollable-content {
@@ -29,11 +29,14 @@
             padding: 20px; 
             background: white; 
             border-radius: 8px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         }
         h1 { 
             text-align: center; 
             color: black; 
+        }
+        h2 { 
+            color: purple; 
         }
         ul { 
             list-style: none; 
@@ -41,9 +44,6 @@
         }
         li { 
             margin: 10px 0; 
-        }
-        .note { 
-            color: red; 
         }
         .button-container { 
             text-align: center; 
@@ -63,24 +63,37 @@
         .button:hover {
             background-color: #800080;
         }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
         .nested {
             list-style: disc;
             padding-left: 20px;
         }
         @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
             .container {
                 padding: 15px;
                 box-shadow: none;
             }
-            .dropdown select {
-                padding: 8px;
-                font-size: 16px;
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
             }
         }
         @media (min-width: 601px) {
             body {
                 background-image: url('../images/florence2.jpg');
             }
+        }
+        p { 
+            text-align: center; /* Center the paragraph text */
         }
     </style>
 </head>
