@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo llegar</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden; /* Evitar el desplazamiento en el cuerpo */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Altura completa menos padding */
+            overflow-y: auto; /* Habilitar desplazamiento vertical */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Cambiado a púrpura */
+            border: 2px solid black; /* Borde negro */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Mantener la relación de aspecto */
+            border: 1px solid purple; /* Borde predeterminado */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Ajustar ancho para pantallas más pequeñas */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+        p { 
+            text-align: center; /* Centrar el texto del párrafo */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Cómo llegar</h1>
+            <p>A continuación, encontrarás información sobre cómo llegar al apartamento. Visita la sección de Transporte público para obtener información sobre cómo moverte y llegar al centro histórico.</p>
+            <hr>
+
+            <h2>Notas</h2>
+            <ul class="top-level">
+                <li>El apartamento está a 2 minutos a pie de la parada del tranvía <strong>Novoli - Torre degli Agli</strong>, 
+                    que se encuentra en la línea del <strong>Tranvía T2</strong> que conecta el aeropuerto de Florencia con el centro de la ciudad y 
+                    con la estación de tren Santa Maria Novella.</li>
+                <li>8 minutos al aeropuerto.</li>
+                <li>19 minutos a la estación de tren Santa Maria Novella.</li>
+                <li>19 minutos al centro de la ciudad.</li>
+            </ul>
+            
+            <h2>Desde el aeropuerto de Florencia</h2>
+            <ul class="top-level">
+                <li>Toma el <strong>Tranvía T2</strong> desde la parada <strong>Peretola Aeroporto</strong> justo afuera del Aeropuerto Amerigo Vespucci y dirígete hacia Unità. 
+                    Baja en <strong>Novoli - Torre degli Agli</strong>. El trayecto dura 10 minutos, con tranvías cada 6 minutos. 
+                    Desde la parada del tranvía, hay 2 minutos a pie hasta el apartamento en Via della Torre degli Agli, 8.</li>
+                <img src="../images/transports/Agli-Airport.PNG" alt="Trayecto desde el aeropuerto" class="centered-image smartphone-image">
+                <img src="../images/transports/Agli-Airport2.PNG" alt="Detalles del trayecto desde el aeropuerto" class="centered-image smartphone-image">
+                <img src="../images/transports/Agli-Airport-601px.PNG" alt="Trayecto desde el aeropuerto para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Desde la estación Santa Maria Novella</h2>
+            <ul class="top-level">
+                <li>Desde la parada <strong>Unità</strong>, cerca de la estación de tren Santa Maria Novella, 
+                    toma el <strong>Tranvía T2</strong> y baja en la parada <strong>Novoli - Torre degli Agli</strong>. 
+                    El trayecto dura aproximadamente 19 minutos, con tranvías cada 6 minutos. 
+                    Desde la parada, hay 2 minutos a pie hasta el apartamento en Via della Torre degli Agli, 8.</li>
+                <img src="../images/transports/Centro-Agli.PNG" alt="Trayecto desde la estación de tren" class="centered-image smartphone-image">
+                <img src="../images/transports/Centro-Agli2.PNG" alt="Detalles del trayecto desde la estación de tren" class="centered-image smartphone-image">
+                <img src="../images/transports/Centro-Agli-601px.PNG" alt="Trayecto desde la estación de tren para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Desde el aeropuerto de Pisa</h2>
+            <ul class="top-level">
+                <li>Desde el aeropuerto de Pisa, toma el <strong>Pisa Mover</strong> hacia la estación <strong>Pisa Centrale</strong>. 
+                    Una vez allí, toma un tren hacia la estación <strong>Firenze Santa Maria Novella</strong>. 
+                    El trayecto en tren dura aproximadamente 1 hora y 15 minutos.</li>
+                <li>Alternativamente, puedes tomar un autobús directo desde el aeropuerto hasta la estación central de autobuses en Florencia, 
+                    que está cerca de Santa Maria Novella. El trayecto en autobús dura aproximadamente 1 hora y 45 minutos.</li>
+                <li>Una vez en Florencia, toma la línea del <strong>Tranvía T2</strong> y baja en <strong>Novoli - Torre degli Agli</strong>. 
+                    El trayecto dura 10 minutos, con tranvías cada 6 minutos. Desde la parada, hay 2 minutos a pie hasta el apartamento en Via della Torre degli Agli, 8.</li>
+            </ul>
+            <hr>
+          
+            <h2>En coche</h2>
+            <ul class="top-level">
+                <li>Hay aparcamiento público gratuito y de pago disponible en Via della Torre degli Agli y calles cercanas. 
+                    Ten en cuenta que el estacionamiento está sujeto a disponibilidad y puede ser limitado durante las horas punta. 
+                    Siempre verifica las restricciones o señales.
+                    Por lo general, puedes encontrar aparcamiento en la plaza frente a Via della Torre degli Agli, 1.</li>
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Trayecto al aparcamiento" class="centered-image smartphone-image">
+                <img src="../images/transports/Agli-Parcheggio.PNG" alt="Trayecto al aparcamiento para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish" class="button">Página principal</a>
+            </div>
+    
+            
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
