@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Evitar desplazamiento horizontal */ 
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+        h1 { 
+            text-align: center; 
+            margin: 10px 0; 
+            color: black;
+        }
+        .button-container { 
+            width: 100%;
+            text-align: center; 
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            width: 200px; /* Ajustar ancho */
+            margin: 5px 0; /* Reducir margen */
+            padding: 10px; /* Reducir padding */
+            font-size: 16px; /* Ajustar tamaño de fuente */
+            color: white;
+            background-color: purple; 
+            border: 2px solid black; 
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .button.back {
+            width: 150px; /* Ancho más reducido para el botón de retroceso */
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 600px) {
+            .button {
+                width: 150px; /* Ajustar para pantallas pequeñas */
+            }
+            .button.back {
+                width: 120px; /* Ancho más reducido para el botón de retroceso en pantallas pequeñas */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="come_arrivare.html" class="button">Cómo llegar</a>
+    </div>
+    <div class="button-container">
+        <a href="okhome_checkin.html" class="button">Check in / Ok Home</a>
+    </div>    
+    <div class="button-container">
+        <a href="regole_casa.html" class="button">Normas de la casa</a>
+    </div>
+    <div class="button-container">
+        <a href="istruzioni_dispositivi/index.html" class="button">Instrucciones dispositivos</a>
+    </div>
+    <div class="button-container">
+        <a href="trasporti_pubblici.html" class="button">Transporte público</a>
+    </div>
+    <div class="button-container">
+        <a href="consigli/index.html" class="button">Recomendaciones</a>
+    </div>
+    <div class="button-container">
+        <a href="gallery.html" class="button">La casa</a>
+    </div>
+    <div class="button-container">
+        <a href="https://torredegliagli.github.io/knowledge-base" class="button back">Atrás</a>
+    </div>
+</body>
+</html>
 
