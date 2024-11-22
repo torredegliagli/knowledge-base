@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas de la casa</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .note { 
+            color: red; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Reglas de la casa</h1>
+            
+            <ul class="top-level">
+                <li><strong>Check-in:</strong> después de las 15:00</li>
+                <li><strong>Check-out:</strong> antes de las 10:00</li>
+                <li><strong>Prohibido fumar:</strong> no fumar dentro del apartamento.</li>
+                <li><strong>Animales:</strong> lamentablemente, no se permiten mascotas.</li>
+                <li><strong>Horario de silencio:</strong> por favor, respeta a nuestros vecinos manteniendo el ruido al mínimo entre las 22:00 y las 8:00.</li>
+                <li><strong>Medidas de seguridad:</strong> asegúrate de que todos los electrodomésticos estén apagados, las ventanas no estén abiertas de par en par y la puerta esté cerrada con llave al salir.</li>
+                <li><strong>Eliminación de residuos:</strong> separa los residuos y utiliza los contenedores proporcionados. Necesitarás una llave electrónica (proporcionada) para utilizar los contenedores exteriores en la calle.</li>
+                <li><strong>Daños:</strong> infórmanos inmediatamente si algo se daña. Eres responsable de cualquier daño durante tu estancia.</li>
+                <li><strong>Ocupación máxima:</strong> se permiten hasta 4 huéspedes.</li>
+                <li><strong>No fiestas:</strong> no se permiten fiestas ni eventos.</li>
+                <li><strong>Visitantes:</strong> los visitantes son bienvenidos, pero no se permiten pernoctaciones.</li>
+                <li><strong>Estacionamiento:</strong> no hay estacionamiento reservado disponible, pero normalmente puedes encontrar un lugar en Via della Torre degli Agli.</li>
+                <li><strong>Uso de la cocina:</strong> limpia después de usar la cocina. No dejes platos sucios ni alimentos perecederos y asegúrate de que todos los electrodomésticos estén apagados cuando termines.</li>
+                <li><strong>Uso del baño:</strong> mantén el baño limpio. Solo arroja papel higiénico en el inodoro e informa inmediatamente de cualquier problema de fontanería.</li>
+                <li><strong>Uso de la lavadora:</strong> sigue las instrucciones para usar la lavadora y no la sobrecargues.</li>
+                <li><strong>Contactos de emergencia:</strong>
+                    <ul class="nested">
+                        <li><strong>Número de emergencia 24h:</strong> 112</li>
+                        <li><strong>Farmacia 24 horas (Farmacia Santa Maria Novella):</strong> Via della Scala, 19, +39 055 216761</li>
+                    </ul>
+                </li>
+                <li><strong>Wi-Fi e internet:</strong> por favor, evita actividades ilegales en línea y el uso indebido del sitio de internet del apartamento.</li>
+                <li><strong>Leyes locales:</strong> sigue todas las leyes y regulaciones locales.</li>
+                <li><strong>Respeto por la propiedad:</strong> trata el apartamento y su contenido con respeto.</li>
+                <li><strong>Objetos perdidos y encontrados:</strong> contáctanos inmediatamente si encuentras o pierdes objetos personales.</li>
+            </ul>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish" class="button">Página principal</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
