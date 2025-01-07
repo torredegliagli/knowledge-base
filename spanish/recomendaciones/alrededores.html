@@ -1,1 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alrededores</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Adjust width for smaller screens */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+        p { 
+            text-align: center; /* Center the paragraph text */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Alrededores</h1>
+            <p>La zona de Novoli, aunque no está en el animado centro de la ciudad, ofrece un refugio tranquilo y conveniente con una amplia variedad de servicios locales.</p>
+            <hr>
+            
+            <h2>A la vuelta de la esquina</h2>
+            <ul class="top-level">
+                <li>Disfruta de un buen desayuno en la pastelería Gaetano, a pocos metros de la casa, 
+                    saborea los deliciosos productos recién horneados de la panadería La Schiacciateria y déjate tentar por las preparaciones de la carnicería Ambrogi. 
+                    Una tienda de kebab, una pequeña tienda de comestibles y una frutería completan el panorama de las actividades locales, justo detrás de la esquina entre Via della Torre degli Agli y Via di Novoli.</li>
+                <li>Cerca de allí, también encontrarás un reconocido restaurante de mariscos y un tradicional camión de comida callejera para el lampredotto y otros tipos de sándwiches, ambos accesibles a pie.</li>
+                <img src="../../images/transports/Neighborhood2.png" alt="Ruta desde el aeropuerto" class="centered-image smartphone-image">
+                <img src="../../images/transports/Neighborhood2.png" alt="Ruta desde el aeropuerto para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Parco San Donato</h2>
+            <ul class="top-level">
+                <li>Para relajarse con un poco de verde, el Parco San Donato está a solo 5 minutos a pie. 
+                    Este parque ofrece amplios espacios abiertos, ideales para caminar, correr o simplemente para sentarse y disfrutar de un día de sol.</li>
+                <img src="../../images/transports/Agli.sandonato2.PNG" alt="Ruta Parco San Donato" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.sandonato.601px.PNG" alt="Ruta Parco San Donato para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Centro comercial Esselunga</h2>
+            <ul class="top-level">
+                <li>Para hacer compras más grandes, el supermercado Esselunga está a solo 8 minutos a pie. 
+                    Aquí encontrarás un supermercado bien surtido para todas tus necesidades alimentarias, además de una amplia selección de otros productos para el hogar.</li>
+                <img src="../../images/transports/Agli.esselunga.PNG" alt="Ruta Esselunga" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.esselunga.601px.PNG" alt="Ruta Esselunga para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Centro comercial San Donato</h2>
+            <ul class="top-level">
+                <li>Para relajarse con algo de compras, el Centro Comercial San Donato, con el cine The Space y el gimnasio Virgin Active, está a solo 12 minutos a pie o 8 minutos en tranvía. 
+                    Aquí podrás encontrar varias tiendas, restaurantes y entretenimiento para pasar un buen día.</li>
+                <img src="../../images/transports/Agli.commerciale.tram.PNG" alt="Ruta Centro Comercial San Donato" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.commerciale.tram.px601.PNG" alt="Ruta Centro Comercial San Donato para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Farmacia más cercana</h2>
+            <ul class="top-level">
+                <li>Hay dos farmacias a solo 5 minutos a pie. Aquí encontrarás todo lo necesario para tu salud y bienestar, 
+                    incluidos medicamentos de venta libre, productos de cuidado personal y consejos de personal cualificado.</li>
+                <img src="../../images/transports/Agli.farmacia.PNG" alt="Ruta Farmacia" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.farmacia2.PNG" alt="Ruta Farmacia" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.farmacia.601.px.PNG" alt="Ruta Farmacia para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/transports/Agli.farmacia2.601.px.PNG" alt="Ruta Farmacia para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Camión de comida street food Tripperia</h2>
+            <ul class="top-level">
+                <li>Un camión de comida callejera, llamado 'Il Trippaio', está a solo 7 minutos a pie. Aquí podrás disfrutar de algunos de los sabores auténticos de la tradición florentina, 
+                    como el famoso lampredotto, preparado y servido fresco todos los días.</li>
+                <img src="../../images/transports/Agli.trippaio.PNG" alt="Ruta Tripperia" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.trippaio.601px.PNG" alt="Ruta Tripperia para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+
+            <h2>Ristorante Antica Osteria Toscana</h2>
+            <ul class="top-level">
+                <li>A pocos pasos de casa, el restaurante Antica Osteria Toscana ofrece una auténtica cocina toscana con platos típicos de carne de la tradición florentina. 
+                    Ubicado en Via di Novoli 73, a 5 minutos a pie del apartamento, aquí podrás probar la famosa bistecca alla fiorentina.</li>
+                <li></li>
+                <a href="https://anticaosteriatoscanafirenze.playrestaurant.tv/">Ristorante Antica Osteria Toscana</a>
+                </ul>
+            <hr>
+
+            <h2>Ristorante Settimo</h2>
+            <ul class="top-level">
+                <li>El Ristorante Settimo está a solo 10 minutos a pie. En Florencia desde 1975, este restaurante es famoso por su cocina de mariscos con ingredientes siempre de primera calidad y 
+                    un ambiente acogedor, perfecto para una cena con sabores tradicionales del mar italiano, después de un día de exploración.</li>
+                <img src="../../images/transports/Agli.settimo.PNG" alt="Ruta Ristorante Settimo" class="centered-image smartphone-image">
+                <img src="../../images/transports/Agli.settimo.601px.PNG" alt="Ruta Ristorante Settimo para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish/recomendaciones/index.html" class="button">Recomendaciones</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
