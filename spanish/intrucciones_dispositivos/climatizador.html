@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones del aire acondicionado</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; 
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Evita el desplazamiento en el cuerpo */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Altura completa menos el relleno */
+            overflow-y: auto; /* Habilita el desplazamiento vertical */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Cambiado a morado */
+            border: 2px solid black; /* Borde negro */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Mantiene la relación de aspecto */
+            border: 1px solid purple; /* Borde por defecto */
+        }
+        .inline-image {
+            vertical-align: middle;
+            width: 16px;  /* Tamaño reducido para las imágenes */
+            height: auto;
+            margin-left: 5px; /* Espacio a la izquierda de la imagen */
+        }
+
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Instrucciones del aire acondicionado</h1>
+
+            <h2>Uso del mando a distancia</h2>
+            <ul class="nested">
+                <li>Manejar con cuidado, evitar mojarlo o dejarlo caer.</li>
+                <li>No exponerlo a la luz directa del sol.</li>
+                <li>Retirar las baterías en caso de no utilizarlo durante mucho tiempo.</li>
+                <li>Colocar el mando a distancia en una posición desde la que la señal pueda alcanzar el receptor del aparato (máximo 8 metros).</li>
+            </ul>
+
+            <h2>Descripción del mando a distancia (habitación)</h2>
+            <ul>
+                <img src="../../images/dispositivi/condizionatore/Telecomando.PNG" alt="Mando aire acondicionado2" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/telecomando.601px.PNG" alt="Mando aire acondicionado para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/dispositivi/condizionatore/Telecomando2.PNG" alt="Mando aire acondicionado" class="centered-image smartphone-image">
+            </ul>
+
+            <h2>Descripción del mando a distancia (salón)</h2>
+            <ul>
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto601px.png" alt="Mando aire acondicionado para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto1.png" alt="Mando aire acondicionado" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/condizionatore.telecom.salotto2.png" alt="Mando aire acondicionado2" class="centered-image smartphone-image">
+            </ul>
+
+            <h2>Descripción de la pantalla del mando a distancia</h2>
+            <ul>
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.601px.PNG" alt="Pantalla aire acondicionado para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.2.PNG" alt="Pantalla aire acondicionado" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/display.condizionatore.PNG" alt="Pantalla aire acondicionado2" class="centered-image smartphone-image">
+            </ul>
+
+            <h2>Funciones del aire acondicionado</h2>
+            <ul>
+                <li><strong>Encender/Apagar:</strong> presionar el botón <strong>B1</strong> <img src="../../images/dispositivi/condizionatore/b1.PNG" alt="on/off" class="inline-image"> 
+                    para encender o apagar el aire acondicionado.
+                </li>
+                <li><strong>Control de velocidad del ventilador:</strong> presionar el botón <strong>B2</strong> <img src="../../images/dispositivi/condizionatore/b2.PNG" alt="ventilador" class="inline-image"> 
+                    para cambiar la velocidad: Baja > Media > Alta > Automática.
+                </li>
+                <li><strong>Modo automático:</strong> ajusta automáticamente la temperatura y la velocidad del ventilador. 
+                    Presionar el botón <strong>B5</strong> <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Aire acondicionado modo" class="inline-image"> 
+                    hasta visualizar el símbolo <strong>D5</strong> <img src="../../images/dispositivi/condizionatore/d5.PNG" alt="Aire acondicionado auto" class="inline-image">.
+                </li>
+                <li><strong>Modo deshumidificación:</strong> deshumidifica el ambiente. Presionar el botón <strong>B5</strong> <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Aire acondicionado modo" class="inline-image"> 
+                    hasta visualizar el símbolo <strong>D3</strong> <img src="../../images/dispositivi/condizionatore/d3.PNG" alt="Aire acondicionado húmedo" class="inline-image"> 
+                    y la ventilación mínima <strong>D18</strong> <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Aire acondicionado ventilación" class="inline-image">.                 
+                </li>
+                <li><strong>Modo ventilación:</strong> no afecta la temperatura ni la humedad. 
+                    Presionar el botón <strong>B5</strong> <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Aire acondicionado modo" class="inline-image"> 
+                    hasta visualizar el símbolo <strong>D18</strong> de ventilación mínima <img src="../../images/dispositivi/condizionatore/d18.PNG" alt="Aire acondicionado ventilación" class="inline-image">.                    
+                </li>
+                <li><strong>Modo calefacción:</strong> calienta el ambiente. presionar el botón <strong>B5</strong> <img src="../../images/dispositivi/condizionatore/b5.PNG" alt="Aire acondicionado modo" class="inline-image"> 
+                    hasta visualizar el símbolo <strong>D1</strong> <img src="../../images/dispositivi/condizionatore/d1.PNG" alt="Aire acondicionado caliente" class="inline-image">.
+                </li>
+                <li><strong>Control del flujo de aire:</strong> presionar el botón <strong>B4</strong> <img src="../../images/dispositivi/condizionatore/b4.PNG" alt="Aire acondicionado oscilación" class="inline-image"> 
+                    para activar/desactivar la oscilación continua del deflector móvil.
+                </li>
+                <li><strong>Función SILENT:</strong> reduce gradualmente la velocidad del ventilador. 
+                    Presionar el botón <strong>B3</strong> <img src="../../images/dispositivi/condizionatore/b3.PNG" alt="Horno apagado" class="inline-image"> para activar la función SILENT.
+                </li>
+            </ul>
+
+            <h2>Consejos para el ahorro de energía</h2>
+            <ul class="nested">
+                <li>Cerrar puertas y ventanas durante el uso.</li>
+                <li>No obstruir las vías de flujo de aire.</li>
+            </ul>
+
+            <h2>Diagnóstico y alarmas</h2>
+            <ul>
+                <li><strong>LED A:</strong> limpieza del filtro necesaria.</li>
+                <li><strong>LED B:</strong> alta temperatura de la batería.</li>
+                <li><strong>LED A + C parpadeando:</strong> funcionamiento continuo de la bomba.</li>
+                <img src="../../images/dispositivi/condizionatore/condizionatore.led.png" alt="Pantalla aire acondicionado2" class="centered-image smartphone-image">
+                <img src="../../images/dispositivi/condizionatore/condizionatore.led.png" alt="Pantalla aire acondicionado para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            
+
+            <h2>Advertencias generales</h2>
+            <ul class="nested">
+                <li>No mover manualmente el flap de salida de aire.</li>
+                <li>En caso de fugas de agua, apagar inmediatamente y desconectar el aparato.</li>
+            </ul>
+            <hr>
+
+            <p>Si tienes problemas, contacta con el anfitrión, Alessandro.</p>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish/intrucciones_dispositivos/index.html" class="button">Instrucciones</a>
+            </div>
+        </div>
+            
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+    
+</body>
+</html>
 
