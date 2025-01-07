@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos típicos y restaurantes</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('../../images/florence3.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            overflow: hidden; /* Evitar desplazamiento en el cuerpo */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Altura total menos el relleno */
+            overflow-y: auto; /* Habilitar desplazamiento vertical */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Cambiado a púrpura */
+            border: 2px solid black; /* Borde negro */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Mantener la relación de aspecto */
+            border: 1px solid purple; /* Borde por defecto */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .centered-image {
+                width: 90%; /* Ajustar el ancho para pantallas más pequeñas */
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+        p { 
+            text-align: center; /* Centrar el texto del párrafo */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Productos típicos y restaurantes</h1>
+            <p>Florencia es una ciudad rica en tradiciones culinarias. Desde los platos típicos hasta los restaurantes recomendados, 
+                aquí encontrarás una breve guía para orientarte entre lo mejor de la gastronomía local.</p>
+            <hr>
+            
+            <h2>La bistecca alla fiorentina</h2>
+            <ul class="top-level">
+                <li>Un icono especial de Florencia, la bistecca alla fiorentina es un suculento filete de carne de res, cocinado hábilmente a la parrilla. 
+                    Este corte de carne, grueso y sabroso, generalmente se sirve poco hecho para mantener toda su jugosidad. 
+                    Es una visita obligada para todo amante de la carne que visite Florencia.</li>
+            </ul>
+            <hr>
+
+            <h2>La schiacciata</h2>
+            <ul class="top-level">
+                <li>La schiacciata es un pan típico de la Toscana, crujiente por fuera y suave por dentro. 
+                    Perfecta para ser rellena con embutidos, quesos o verduras, es una opción ideal para una merienda rápida y deliciosa. 
+                    Puedes encontrarla en muchas panaderías locales, recién horneada y aún caliente.</li>
+            </ul>
+            <hr>
+
+            <h2>Il lampredotto</h2>
+            <ul class="top-level">
+                <li>El lampredotto es un plato típico de la comida callejera florentina, preparado con una parte del estómago del bovino. 
+                    Servido en un panecillo y condimentado con salsa verde o salsa picante, es una experiencia culinaria única que no te puedes perder. 
+                    Lo encontrarás en los tradicionales camiones de comida en algunas plazas y calles de Florencia.</li>
+            </ul>
+            <hr>
+
+            <h2>La ribollita</h2>
+            <ul class="top-level">
+                <li>La ribollita es una sopa rústica típica de la cocina toledana, hecha con pan duro, frijoles y verduras. 
+                    Este plato, de sabor rico y reconfortante, representa la simplicidad y la genuinidad de la tradición campesina toledana. 
+                    Perfecta para calentarse durante los meses de invierno.</li>
+            </ul>
+            <hr>
+
+            <h2>El vino</h2>
+            <ul class="top-level">
+                <li>La Toscana es famosa por sus vinos de alta calidad como el Chianti, el Brunello di Montalcino y el Vino Nobile di Montepulciano. 
+                    Estos vinos, con su carácter único y complejo, son el acompañamiento perfecto para los platos de la tradición toledana.</li>
+            </ul>
+            <hr>
+
+            <h2>El vin santo</h2>
+            <ul class="top-level">
+                <li>El vin santo es un vino de postre típico de la Toscana, dulce y aromático, a menudo servido con los cantucci, los tradicionales bizcochos de almendra. 
+                    Esta combinación representa el cierre perfecto para una comida típica toledana.</li>
+            </ul>
+            <hr>
+
+            <h2>Mercado central</h2>
+            <ul class="top-level">
+                <li>El mercado central es un animado mercado cubierto en el corazón de Florencia. 
+                    Aquí puedes encontrar productos frescos locales, quesos, embutidos y una variedad de especialidades típicas de la Toscana. 
+                    Además, el mercado ofrece varios puestos gastronómicos donde degustar platos tradicionales preparados al momento.</li>
+                <img src="../../images/transports/agli-mercato.601px.png" alt="Mercado central" class="centered-image smartphone-image">
+                <img src="../../images/transports/agli-mercato.png" alt="Mercado central para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+            <hr>
+            
+            <h2>Restaurante Diladdarno</h2>
+            <ul class="top-level">
+                <li>El restaurante Diladdarno, ubicado en el Oltrarno, ofrece una experiencia culinaria auténtica con platos típicos de la tradición florentina. 
+                    Con un ambiente acogedor y un servicio cordial, es el lugar ideal para disfrutar de una comida tranquila y deliciosa después de un día de exploración.</li>
+                <a href="https://www.trattoriadiladdarno.com/">Restaurante Diladdarno</a>
+            </ul>
+            <hr>
+
+            <h2>Restaurante 5 e cinque</h2>
+            <ul class="top-level">
+                <li>Ubicado en pleno centro en Piazza della Passera, el restaurante 5 e cinque es conocido por su cocina vegetariana y su ambiente acogedor. 
+                    Ofrece un menú alternativo que incluye platos a base de verduras con ingredientes frescos y de calidad.</li>
+                <a href="https://5ecinque.it/">Restaurante 5 e cinque</a>
+            </ul>
+            <hr>
+
+            <h2>Restaurante Banco a Ristoro</h2>
+            <ul class="top-level">
+                <li>Si tienes acceso a un coche y deseas explorar las zonas cercanas a Florencia, 
+                    el restaurante Banco a Ristoro, situado fuera de Florencia, en la localidad de Molino del Piano, 
+                    ofrece una cocina innovadora que pone en valor ingredientes frescos y de alta calidad. 
+                    Enriquece tu experiencia visitando lugares de interés cercanos, 
+                    como el sugestivo Castello del Trebbio, el pintoresco Mulino a Vento de Monterifrassine y el renombrado Castello di Nipozzano.
+                    Estos lugares son célebres por sus hermosos paisajes, su importancia histórica, 
+                    y la producción de vinos y productos de excelencia.</li>
+                <a href="https://bancoaristoro.it/">Restaurante Banco a Ristoro</a>
+            </ul>
+            <hr>
+
+            <h2>Sagre</h2>
+            <ul class="top-level">
+                <li>Si tienes acceso a un coche y deseas explorar las zonas cercanas a Florencia, 
+                    participando en momentos de encuentro y fiesta típicos de los pueblos toledanos, 
+                    las sagre ofrecen una oportunidad perfecta. Estas fiestas tradicionales estacionales celebran productos locales 
+                    como trufa, vino, aceite de oliva y muchos otros platos y productos típicos. 
+                    Ofrecen una ocasión única para degustar especialidades regionales en un ambiente festivo, 
+                    con eventos que varían a lo largo del año en diferentes localidades de Toscana y la provincia de Florencia. Descubre las sagre locales en estos sitios:</li>
+                <li><a href="https://www.sagretoscane.com/sagre/fi/">Sagre provincia de Florencia</a></li>
+                <li><a href="https://www.firenzetoday.it/eventi/tipo/sagre/">Sagre Firenze Today</a></li>
+            </ul>
+            <hr>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/consigli/index.html" class="button">Consejos</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
 
