@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones horno</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; 
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .centered-image.small {
+            display: block;
+            margin: 10px auto;
+            width: 50%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style> 
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Instrucciones horno</h1>
 
+            <h2>Descripción del producto</h2>
+            <ul>
+            <li>1. Panel de control</li>
+            <li>2. Ventilador</li>
+            <li>3. Lámpara</li>
+            <li>4. Parrillas laterales</li>
+            <li>5. Puerta</li>
+            <li>6. Resistencia superior / Grill</li>
+            <li>7. Placa de matrícula (no remover)</li>
+            <li>8. Resistencia inferior (no visible)</li>
+            <img src="../../images/dispositivi/forno/forno.descrizione2.PNG" alt="Descripción horno 2" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/forno/forno.descrizione.601px.PNG" alt="Descripción horno para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+          
+            <h2>Panel de control</h2>
+            <ul>
+                <li>1. Perilla de selección</li>
+                <li>2. Perilla del temporizador</li>
+                <li>3. Perilla del termostato</li>
+                <li>4. LED de termostato/precalentamiento</li>
+            <img src="../../images/dispositivi/forno/forno.pannello.PNG" alt="Panel de control" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/forno/forno.pannello.PNG" alt="Descripción horno para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+          
+            <h2>Funciones del horno</h2>
+            <ul>
+                <li><strong>Off:</strong> para apagar el horno.</li>
+                <img src="../../images/dispositivi/forno/forno.off.PNG" alt="Horno apagado" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.off.PNG" alt="Horno apagado para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Luz:</strong> para encender la luz del compartimento.</li>
+                <img src="../../images/dispositivi/forno/forno.luce.PNG" alt="Luz apagada" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.luce.PNG" alt="Luz apagada para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Estático:</strong> para cocinar cualquier tipo de alimento en una sola rejilla. Se recomienda usar el nivel 2.</li>
+                <img src="../../images/dispositivi/forno/forno.statico.PNG" alt="Función estática" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.statico.PNG" alt="Función estática para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Diamond Clean:</strong> la acción del vapor liberado durante este ciclo especial de limpieza a baja temperatura permite eliminar fácilmente suciedad y restos de alimentos.</li>
+                <img src="../../images/dispositivi/forno/forno.diamond.PNG" alt="Función Diamond" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.diamond.PNG" alt="Función Diamond para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Ventilado:</strong> para hornear pasteles con relleno líquido en una sola rejilla. También se puede usar para cocinar en dos niveles.</li>
+                <img src="../../images/dispositivi/forno/forno.ventilato.PNG" alt="Función ventilado" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.ventilato.PNG" alt="Función ventilado para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Grill:</strong> para asar costillas, brochetas y salchichas, gratinar verduras o dorar pan.</li>
+                <img src="../../images/dispositivi/forno/forno.grill.PNG" alt="Función Grill" class="centered-imag.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.grill.PNG" alt="Función Grill para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Turbo Grill:</strong> para asar piezas grandes de carne (piernas, roast beef, pollos).</li>
+                <img src="../../images/dispositivi/forno/forno.turbogrill.PNG" alt="Función Turbo Grill" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.turbogrill.PNG" alt="Función Turbo Grill para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+                <li><strong>Descongelar:</strong> para acelerar el proceso de descongelación de alimentos.</li>
+                <img src="../../images/dispositivi/forno/forno.scong.PNG" alt="Función descongelar" class="centered-image.small smartphone-image">
+                <img src="../../images/dispositivi/forno/forno.scong.PNG" alt="Función descongelar para pantallas grandes" class="centered-image.small large-screen-image" style="display: none;">
+            </ul>
+
+            <h2>Uso diario</h2>
+            <ul>
+                <li><strong>Seleccionar una función:</strong> girar la perilla de selección hasta el símbolo de la función deseada.</li>
+                <li><strong>Iniciar una función manual:</strong> girar la perilla del termostato para ajustar la temperatura deseada.</li>
+                <li><strong>Precalentamiento:</strong> el LED del termostato encendido indica que se está realizando el precalentamiento.</li>
+                <li><strong>Configurar el temporizador:</strong> girar la perilla del temporizador completamente en el sentido horario y luego ajustarla a la duración deseada girando en sentido antihorario.</li>
+            </ul>
+
+            <h2>Tabla de cocción</h2>
+            <ul>
+                <li><strong>Bizcochos con levadura:</strong> 150 - 170°C durante 30 - 90 minutos en el nivel 2.</li>
+                <li><strong>Bizcochos rellenos:</strong> 160 - 200°C durante 35 - 90 minutos en el nivel 2.</li>
+                <li><strong>Galletas/Muffins:</strong> 160 - 180°C durante 15 - 35 minutos en el nivel 2 o 3.</li>
+                <li><strong>Pizza/Focaccia:</strong> 220 - 250°C durante 10 - 25 minutos en el nivel 1 o 2.</li>
+                <li><strong>Lasagna/Pasta al horno:</strong> 190 - 200°C durante 45 - 65 minutos en el nivel 2.</li>
+                <li><strong>Asado de cerdo con corteza:</strong> 180 - 190°C durante 110 - 150 minutos en el nivel 2.</li>
+            </ul>
+
+            <h2>Cuidado y limpieza</h2>
+            <ul>
+                <li>Limpiar las superficies externas con un paño de microfibra húmedo.</li>
+                <li>Limpiar las superficies internas después de cada uso, dejando enfriar el horno.</li>
+                <li>Activar la función Diamond Clean para una limpieza óptima de las superficies internas.</li>
+                <li>Remojar los accesorios con detergente para platos después del uso.</li>
+            </ul>
+
+            <h2>Consejos útiles</h2>
+            <ul>
+                <li>Usar la función <strong>Ventilado</strong> para cocinar simultáneamente alimentos diferentes en varios niveles.</li>
+                <li>Usar utensilios de metal oscuro o recipientes de pyrex o cerámica para tiempos de cocción más largos.</li>
+            </ul>
+
+            <hr>
+
+            <p>Si encuentras problemas, contacta con el anfitrión, Alessandro.</p>
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Instrucciones</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
