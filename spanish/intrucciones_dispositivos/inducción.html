@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istruzioni induzione</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+    <div class="container">
+        <h1>Instrucciones de inducción</h1>
 
+        <h2>Seguridad</h2>
+        <ul>
+            <li>No utilice la placa de cocción si la superficie está agrietada.</li>
+            <li>No coloque objetos en las zonas de cocción.</li>
+            <li>Supervise siempre el proceso de cocción, especialmente con grasas y aceites.</li>
+            <li>Mantenga a los niños alejados de la placa de cocción.</li>
+        </ul>
+
+        <h2>Encendido y apagado</h2>
+        <ul>
+            <li><strong>Para encender:</strong> presione el botón de encendido durante aproximadamente 1 segundo.</li>
+            <li><strong>Para apagar:</strong> presione el mismo botón; todas las zonas de cocción se desactivarán.</li>
+            <img src="../../images/dispositivi/induzione/induzione.descrizioneX.PNG" alt="Inducción" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/induzione/induzione.descrizioneX.PNG" alt="Inducción para pantallas más grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+
+        <h2>Uso diario</h2>
+        <ul>
+            <li><strong>Selección de la zona de cocción:</strong> presione el botón de selección de la zona correspondiente.</li>
+            <li><strong>Ajuste de potencia:</strong> use los botones <strong>+</strong> y <strong>-</strong> para ajustar el nivel de potencia de 1 a 9.</li>
+            <li><strong>Booster:</strong> algunas zonas de cocción cuentan con una función de calentamiento rápido (Booster), indicada con la letra <strong>P</strong>.</li>
+            <li><strong>Desactivación:</strong> para desactivar una zona de cocción, selecciónela y presione <strong>-</strong> hasta llevar el nivel a <strong>0</strong>.</li>
+            <img src="../../images/dispositivi/induzione/induzione.posizione.PNG" alt="Posición de inducción" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/induzione/induzione.posizione.PNG" alt="Posición de inducción para pantallas más grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+
+        <h2>Bloqueo de teclas</h2>
+        <ul>
+            <li>Presione durante 3 segundos el botón My menu/Bloqueo de teclas para bloquear los botones y evitar activaciones accidentales. Para desactivar, repita el procedimiento.</li>
+        </ul>
+
+        <h2>Temporizador</h2>
+        <ul>
+            <li>Seleccione y active la zona de cocción deseada, luego presione el icono del reloj e 
+                introduzca el tiempo usando los botones <strong>+</strong> y <strong>-</strong>. 
+                El temporizador comenzará la cuenta regresiva y apagará automáticamente la zona de cocción cuando termine el tiempo.</li>
+        </ul>
+
+        <hr>
+
+        <p>Si encuentra algún problema, contacte con el anfitrión, Alessandro.</p>
+
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base/spanish/intrucciones_dispositivos/index.html" class="button">Instrucciones</a>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
