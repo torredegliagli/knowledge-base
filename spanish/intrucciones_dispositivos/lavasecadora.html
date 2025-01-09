@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istruzioni lavasciuga</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* full height minus padding */
+            overflow-y: auto; /* enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* changed to purple */
+            border: 2px solid black; /* black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* maintain aspect ratio */
+            border: 1px solid purple; /* default border */
+        }
+        .inline-image {
+            vertical-align: middle;
+            width: 25px;  /* Dimensione ridotta per le immagini */
+            height: auto;
+            margin-left: 5px; /* Spazio a sinistra dell'immagine */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+        <div class="container">
+            <h1>Instrucciones lavasecadora</h1>
 
+            <h2>Seguridad</h2>
+            <ul>
+                <li>No utilices el aparato si la superficie está dañada.</li>
+                <li>No coloques objetos sobre la lavasecadora.</li>
+                <li>Supervisa el proceso de lavado y secado, especialmente si hay niños presentes.</li>
+            </ul>
+          
+            <h2>Cómo usar la lavasecadora</h2>
+            <ul>
+                <li><strong>Selección de programa:</strong> selecciona el programa deseado mediante el mando <strong>A</strong>.</li>
+                    <ul class="nested">
+                        <li>La lavasecadora dispone de tres modos de funcionamiento: <strong>lavado</strong>, 
+                        <strong>secado</strong> y <strong>lavado y secado automáticos</strong>. 
+                        Para una descripción más detallada de los programas, consulta los apartados correspondientes.</li>
+                    </ul>
+                <li><strong>Ajuste de configuraciones:</strong> si es necesario, ajusta la temperatura y el centrifugado en la pantalla pulsando los botones <strong>F</strong> y <strong>G</strong>.</li>
+                <li><strong>Detergente:</strong> coloca el detergente en el <strong>compartimento izquierdo</strong> y el suavizante, si se usa, en el central. 
+                    El compartimento derecho solo debe llenarse para programas con prelavado, dejando vacío el compartimento izquierdo.</li>
+                <li><strong>Inicio:</strong> pulsa el botón <strong>B</strong> de encendido durante aproximadamente 1 segundo.</li>
+                <li><strong>Apagado:</strong> cuando el ciclo haya terminado, gira el mando a <strong>OFF</strong> para abrir la puerta.</li>
+                <img src="../../images/dispositivos/lavasciuga/lavasciuga.display2.PNG" alt="Lavasecadora" class="centered-image smartphone-image">
+                <img src="../../images/dispositivos/lavasciuga/lavasciuga.display.newPNG.PNG" alt="Lavasecadora" class="centered-image smartphone-image">
+                <img src="../../images/dispositivos/lavasciuga/lavasciuga.display2.PNG" alt="Lavasecadora para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+                <img src="../../images/dispositivos/lavasciuga/lavasciuga.display.newPNG.PNG" alt="Lavasecadora para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+            </ul>
+          
+            <h2>Programas de lavado</h2>
+            <ul>
+                <li>Seleccionando uno de estos programas mediante el mando, se activará un <strong>ciclo de solo lavado</strong>. 
+                    El secado puede seleccionarse después y realizarse manualmente, 
+                    al terminar el ciclo de lavado, seleccionando un programa de secado mediante el mando, 
+                    o puede realizarse automáticamente, pulsando el botón <strong>D</strong> en la pantalla de la lavasecadora, 
+                    después de haber seleccionado un programa de lavado.</li>
+                <li><strong>Algodón:</strong> para ropa de algodón resistente. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.cotone.PNG" alt="Función algodón" class="inline-image"></li>
+                <li><strong>Eco 40-60:</strong> para ropa de algodón con suciedad normal. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.eco40.60.PNG" alt="Función eco" class="inline-image"></li>
+                <li><strong>Sintéticos:</strong> para ropa de tejidos sintéticos. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.sintetici.PNG" alt="Función sintéticos" class="inline-image"></li>
+            </ul>
+
+            <h2>Programas de lavado rápido</h2>
+            <ul>
+                <li>Seleccionando uno de estos programas mediante el mando, se activará un <strong>ciclo de solo lavado rápido</strong>. 
+                    El secado puede seleccionarse después y realizarse manualmente, 
+                    seleccionando un programa de secado mediante el mando cuando el ciclo de lavado haya terminado, 
+                    o puede realizarse automáticamente, pulsando el botón <strong>D</strong> en la pantalla de la lavasecadora, 
+                    después de haber seleccionado cualquier programa de lavado.</li>
+                <li><strong>Rápido 13'/30'/44':</strong> lavado adecuado para todo tipo de tejidos. 
+                    Recomendado para pequeñas cargas y prendas poco sucias. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.rapido.PNG" alt="Función rápida" class="inline-image">. 
+                    Pulsa el botón <strong>E</strong> en la pantalla de la lavasecadora para cambiar la duración del lavado.</li>
+                <li><strong>Mixtos y colores 59':</strong> para tejidos mixtos de diferentes colores con suciedad ligera. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.lavasciuga.misti.PNG" alt="Función Mixtos y colores" class="inline-image"></li>
+                <li><strong>Algodón 59':</strong> para prendas de algodón con suciedad moderada. 
+                    Para obtener mejores resultados, se recomienda media carga. 
+                    <img src="../../images/dispositivos/lavasciuga/funz.lavasciuga.cotone.PNG" alt="Función Algodón 59'" class="inline-image"></li>
+                <li><strong>Special 49':</strong> garantiza altas prestaciones de lavado a temperatura media en solo 49 minutos. 
+                    Para obtener mejores resultados, se recomienda media carga.  
+                    <img src="../../images/dispositivos/lavasciuga/funz.lavasciuga.rapido.PNG" alt="Función Special 49'" class="inline-image"></li>
+            </ul>
+          
+            <h2>Programas de secado</h2>
+<ul>
+    <li>Seleccionando uno de estos programas mediante el mando, se activará un programa que incluye un <strong>ciclo solo de secado</strong>. 
+        Utiliza este programa después de un programa de lavado para secar tus prendas. 
+        Elige el programa y el nivel de secado deseado, como se explica a continuación.</li>
+
+    <li>Selecciona el programa de secado mediante el mando:
+        <ul class="nested">
+            <li><strong>Lana:</strong> secado a baja temperatura, ideal para prendas de lana. 
+                Se recomienda dar la vuelta a las prendas antes de secarlas. 
+                <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.lana.PNG" alt="Función secado lana" class="inline-image"></li>
+            <li><strong>Mixtos:</strong> secado a baja temperatura, recomendado para tejidos mixtos y sintéticos. 
+                <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.misti.PNG" alt="Función secado mixtos" class="inline-image"></li>
+            <li><strong>Algodón:</strong> secado a alta temperatura, recomendado para tejidos de algodón, toallas, lino y cáñamo. 
+                <img src="../../images/dispositivi/lavasciuga/funz.asciugatura.cotone.PNG" alt="Función secado algodón" class="inline-image"></li>
+        </ul>
+    <li>Selecciona el nivel de secado o un secado por tiempo, presionando el botón <strong>D</strong> en la pantalla de la lavadora-secadora, 
+        hasta que veas aparecer en la pantalla el nivel de secado deseado:</li>
+        <ul class="nested">
+            <li><strong>Extra seco:</strong> recomendado para toallas, albornoces y cargas voluminosas. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.asciutto.PNG" alt="Nivel extra seco" class="inline-image"></li>
+            <li><strong>Listo para plancha:</strong> deja la ropa lista para planchar. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.stiro.PNG" alt="Nivel listo para plancha" class="inline-image"></li>
+            <li><strong>Armario:</strong> para prendas que no necesitan planchado. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.armadio.PNG" alt="Nivel armario" class="inline-image"></li>
+            <li><strong>Tiempo:</strong> 120'/90'/60'/30'.</li>
+        </ul>
+</ul>
+
+<h2>Programas de lavado y secado</h2>
+<ul>
+    <li>Para realizar un ciclo de lavado y uno de secado de forma automática, selecciona un programa de lavado o de lavado rápido y 
+        presiona el botón <strong>D</strong> en la pantalla de la lavadora-secadora para seleccionar el nivel de secado deseado.</li>
+    <li><strong>Selección del programa de lavado:</strong> selecciona el programa de lavado mediante el mando.</li>
+    <li><strong>Nivel de secado:</strong> selecciona el nivel de secado o un secado por tiempo, 
+        presionando el botón <strong>D</strong> en la pantalla de la lavadora-secadora hasta que veas aparecer el nivel de secado deseado:</li>
+        <ul class="nested">
+            <li><strong>Extra seco:</strong> recomendado para toallas, albornoces y cargas voluminosas. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.asciutto.PNG" alt="Nivel extra seco" class="inline-image"></li>
+            <li><strong>Listo para plancha:</strong> deja la ropa lista para planchar. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.stiro.PNG" alt="Nivel listo para plancha" class="inline-image"></li>
+            <li><strong>Armario:</strong> para prendas que no necesitan planchado. 
+                <img src="../../images/dispositivi/lavasciuga/lavasciuga.armadio.PNG" alt="Nivel armario" class="inline-image"></li>
+            <li><strong>Tiempo:</strong> 120'/90'/60'/30'.</li>
+        </ul>
+</ul>
+
+<h2>Funciones especiales</h2>
+<ul>
+    <li><strong>Nivel de suciedad:</strong> esta opción permite elegir entre tres niveles de intensidad de lavado, 
+        según el grado de suciedad de los tejidos, modificando la duración del programa seleccionado 
+        (puede ser utilizada solo en algunos programas, como se indica en la tabla de programas).</li>
+    <li>Para usar esta función, presiona el botón <strong>E</strong> en la pantalla de la lavadora-secadora, 
+        después de seleccionar un programa de lavado, hasta que veas aparecer el nivel de secado deseado.</li>
+    <li><strong>Protección infantil:</strong> presiona simultáneamente los botones <strong>F</strong> y <strong>G</strong> durante unos 3 segundos.</li>
+</ul>
+
+<h2>Tabla de programas</h2>
+<ul>
+    <img src="../../images/dispositivi/lavasciuga/lavasciuga.programmi.PNG" alt="Lavadora-secadora programas" class="centered-image smartphone-image">
+    <img src="../../images/dispositivi/lavasciuga/lavasciuga.programmi.PNG" alt="Lavadora-secadora programas para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+</ul>
+<hr>
+
+<p>Si tienes algún problema, contacta al anfitrión, Alessandro.</p>
+
+
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish/intrucciones_dispositivos/index.html" class="button">Istruzioni</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
