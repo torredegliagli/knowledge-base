@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones lavavajillas</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+    <div class="container">
+        <h1>Instrucciones lavavajillas</h1>
 
+        <h2>Descripción del producto</h2>
+        <ul>
+            <li><strong>Cesta superior:</strong> para platos poco resistentes y utensilios delicados como vasos, tazas, platillos y ensaladeras con bordes bajos.</li>
+            <li><strong>Cesta inferior:</strong> para ollas, tapas, platos, ensaladeras y utensilios de gran tamaño.</li>
+            <li><strong>Cesta para cubiertos:</strong> para cubiertos y objetos pequeños.</li>
+            <li><strong>Dispensadores:</strong> para detergente y abrillantador.</li>
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.display.PNG" alt="Lavavajillas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.display2.PNG" alt="Lavavajillas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.display.px601.PNG" alt="Lavavajillas para pantallas más grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+
+        <h2>Uso diario</h2>
+        <ul>
+            <li><strong>Encendido:</strong> abre la puerta y presiona el botón de encendido/apagado.</li>
+            <li><strong>Carga de las cestas:</strong> carga las cestas con los utensilios como se describe arriba.</li>
+            <li><strong>Rellenado del dispensador de detergente:</strong> agrega el detergente al dispensador.</li>
+            <li><strong>Selección del programa:</strong> selecciona el programa deseado presionando el botón P.</li>
+            <li><strong>Inicio:</strong> presiona el botón de inicio/pausa y cierra la puerta dentro de los 4 segundos. 
+                Al iniciar el programa, se emite una señal acústica.</li>
+        </ul>
+
+        <h2>Programas</h2>
+        <ul>
+            <li><strong>Eco:</strong> para utensilios medianamente sucios; el programa más eficiente en términos de consumo combinado de agua y energía.</li>
+            <li><strong>Intensivo:</strong> para utensilios y ollas muy sucias (no usar para piezas delicadas).</li>
+            <li><strong>Mixtos:</strong> para platos con suciedad normal y restos secos de comida.</li>
+            <li><strong>Lavado rápido:</strong> para una carga reducida de utensilios normalmente sucios, 
+                permite obtener un resultado de lavado óptimo en menos tiempo.</li>
+            <li><strong>Delicados:</strong> para objetos delicados, más sensibles a las altas temperaturas, como vasos y tazas.</li>
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.programmi.PNG" alt="Programas lavavajillas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.programmi.PNG" alt="Programas lavavajillas para pantallas más grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+
+        <h2>Fin del ciclo de lavado</h2>
+        <ul>
+            <li><strong>Indicador de fin:</strong> la conclusión del ciclo se indica con una señal acústica.</li>
+            <li><strong>Apagado:</strong> abre la puerta y apaga el aparato presionando el botón de encendido/apagado, si aún está parpadeando.</li>
+            <li><strong>Descarga:</strong> espera algunos minutos antes de sacar los utensilios para evitar quemaduras, luego descarga primero la cesta inferior y después la superior.</li>
+        </ul>
+
+        <h2>Consejos útiles</h2>
+        <ul>
+            <li><strong>Ahorro energético:</strong> utiliza el lavavajillas solo con carga completa para optimizar el consumo de agua y energía.</li>
+            <li><strong>Agregar utensilios:</strong> si es necesario, agrega utensilios durante el ciclo abriendo la puerta, presionando el botón de inicio/pausa y cerrando la puerta dentro de los 4 segundos.</li>
+            <li><strong>Modificar el programa:</strong> si deseas cambiar el programa, apaga el aparato y vuelve a encenderlo seleccionando el nuevo ciclo.</li>
+        </ul>
+
+        <h2>Resolución de problemas</h2>
+        <ul>
+            <li><strong>Indicador de sal encendido:</strong> el depósito de sal está vacío. Rellénalo con sal específica para lavavajillas.</li>
+            <li><strong>Indicador de abrillantador encendido:</strong> el depósito de abrillantador está vacío. Rellénalo con abrillantador específico para lavavajillas.</li>
+            <li><strong>El lavavajillas no arranca:</strong> asegúrate de que el aparato esté correctamente conectado a la corriente eléctrica y que la puerta esté bien cerrada.</li>
+            <li><strong>Ruido excesivo:</strong> coloca correctamente los utensilios en las cestas y verifica que no obstaculicen la rotación de los brazos aspersores.</li>
+            <li><strong>Platos no limpios:</strong> verifica la disposición de los utensilios, el nivel de detergente y que los filtros no estén obstruidos.</li>
+        </ul>
+
+        <ul>
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.descizione.PNG" alt="Descripción lavavajillas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.descizione2.PNG" alt="Descripción lavavajillas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/lavastoviglie/lavastoviglie.descizione.px601.PNG" alt="Descripción lavavajillas para pantallas más grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+        <hr>
+
+        <p>Si tienes algún problema, contacta al anfitrión, Alessandro.</p>
+            
+            <div class="button-container">
+                <a href="https://torredegliagli.github.io/knowledge-base/spanish/intrucciones_dispositivos/index.html" class="button">Istruzioni</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isLargeScreen = window.innerWidth > 600;
+    
+        if (isLargeScreen) {
+            document.querySelectorAll('.smartphone-image').forEach(img => {
+                img.style.display = 'none';
+            });
+            document.querySelectorAll('.large-screen-image').forEach(img => {
+                img.style.display = 'block';
+            });
+        }
+    
+        function redirectToFolder(selectId) {
+            var select = document.getElementById(selectId);
+            var value = select.value;
+            if (value) {
+                window.location.href = value + "/index.html";
+            }
+        }
+    </script>
+</body>
+</html>
