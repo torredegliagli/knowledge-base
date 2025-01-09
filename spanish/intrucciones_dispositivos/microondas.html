@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrucciones microondas</title> 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; 
+        }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            background-image: url('../../images/florence3.jpeg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            padding: 20px; 
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        .scrollable-content {
+            height: calc(100% - 40px); /* Full height minus padding */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            text-align: center; 
+            color: black; 
+        }
+        h2 { 
+            color: purple; 
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        .button-container { 
+            text-align: center; 
+            margin-top: 20px; 
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple; /* Changed to purple */
+            border: 2px solid black; /* Black border */
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #800080;
+        }
+        .centered-image {
+            display: block;
+            margin: 10px auto;
+            width: 99%;
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid purple; /* Default border */
+        }
+        .nested {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-size: auto;
+                background-position: center;
+            }
+            .container {
+                padding: 15px;
+                box-shadow: none;
+            }
+            .dropdown select {
+                padding: 8px;
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 601px) {
+            body {
+                background-image: url('../../images/florence2.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-content">
+    <div class="container">
+        <h1>Instrucciones microondas</h1>
 
+        <h2>Sugerencias</h2>
+        <ul>
+            <li><strong>No usar recipientes de plástico, incluso si son aptos para microondas, cuando se utilice la función grill o combi grill.</strong></li>
+            <li>Usar solo utensilios resistentes al calor para la función grill.</li>
+            <li>No tocar la parrilla cuando esté caliente.</li>
+            <li>No usar el microondas para cocinar o calentar huevos enteros, con o sin cáscara, ya que podrían explotar.</li>
+            <li>Los líquidos calentados en el microondas pueden superar el punto de ebullición sin formar burbujas visibles. Deje reposar un breve momento y mezcle antes de retirarlos.</li>
+            <li>No usar el microondas sin el plato giratorio y el soporte del plato en su lugar.</li>
+            <li><strong>No encender el microondas cuando esté vacío.</strong></li>
+        </ul>
+
+        <h2>Para evitar el sobrecalentamiento de los objetos</h2>
+        <ul>
+            <li>No usar recipientes de cuello estrecho para calentar líquidos.</li>
+            <li>Siempre revisar la temperatura de los alimentos para niños antes de servir.</li>
+            <li>Usar siempre manoplas o guantes de cocina cuando se toquen recipientes calientes.</li>
+        </ul>
+
+        <h2>Descripción del panel de control</h2>
+
+        <ul>
+            <img src="../../images/dispositivi/microonde/microondeX.PNG" alt="Microondas" class="centered-image smartphone-image">
+            <img src="../../images/dispositivi/microonde/microondeX.PNG" alt="Microondas para pantallas grandes" class="centered-image large-screen-image" style="display: none;">
+        </ul>
+      
+        <h2>Modo microondas</h2>
+        <ul class="nested">
+            <li>Presionar el botón con el ícono de microondas.</li>
+            <li>Seleccionar la potencia deseada presionando varias veces el mismo botón o girando la perilla.</li>
+            <li>Ajustar el tiempo de cocción girando la perilla.</li>
+            <li>Presionar el botón de inicio para comenzar la cocción.</li>
+        </ul>
+
+        <h2>Modo grill</h2>
+        <ul class="nested">
+            <li>Presionar el botón con el ícono de grill.</li>
+            <li>Ajustar el tiempo de cocción girando la perilla.</li>
+            <li>Presionar el botón de inicio para comenzar la cocción.</li>
+        </ul>
+
+        <h2>Modo combi grill</h2>
+        <ul class="nested">
+            <li>Presionar el botón combi grill.</li>
+            <li>Seleccionar el tipo de cocción deseado presionando varias veces el botón o girando la perilla.</li>
+            <li>Ajustar el tiempo de cocción girando la perilla.</li>
+            <li>Presionar el botón de inicio para comenzar la cocción.</li>
+        </ul>
+
+        <h2>Descongelamiento automático</h2>
+        <ul class="nested">
+            <li>Presionar el botón de descongelamiento automático.</li>
+            <li>Seleccionar la categoría de alimento (carne, verduras, pescado, pollo) presionando varias veces el botón o girando la perilla.</li>
+            <li>Ajustar el peso del alimento girando la perilla.</li>
+            <li>Presionar inicio para comenzar la función.</li>
+        </ul>
+
+        <h2>Mantenimiento y limpieza</h2>
+        <ul>
+            <li>Limpie regularmente el horno, eliminando todos los restos de comida.</li>
+            <li>Usar un paño suave y un detergente suave para las superficies internas y externas.</li>
+            <li>No usar dispositivos de vapor para limpiar el horno.</li>
+            <li>Limpie regularmente el plato giratorio y el soporte del plato.</li>
+        </ul>
+
+        <hr>
+
+        <p>Si experimentas problemas, contacta al anfitrión, Alessandro.</p>
+
+        <div class="button-container">
+            <a href="https://torredegliagli.github.io/knowledge-base/italian/istruzioni_dispositivi/index.html" class="button">Instrucciones</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
